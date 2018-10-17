@@ -1,0 +1,1415 @@
+1
+                                                                         
+ REAC                                                                    
+ C   1.0000  H   4.0000  O   1.0000      0.0000      0.0000    1.000000          0.00  G    298.150     F        
+ NAME                                                                    
+0SPECIES BEING CONSIDERED (THERMODYNAMIC ORDER)
+ L 5/66  AR               J 3/78  C                J12/67  CH               J12/72  CH2              J 3/61  CH2O            
+ J 6/69  CH3              BUR 84  CH2OH            L 5/84  CH4              L 4/80  CH3OH            J 6/69  CN              
+ J 9/65  CO               J 9/65  CO2              J 3/77  H                L12/69  HCN              J12/70  HCO             
+ J12/70  HNCO             J 9/78  HO2              J 3/77  H2               J 3/79  H2O              L 3/85  H2O2            
+ J 3/77  N                J12/70  NCO              RUS 78  NH               RUS 78  NH2              RUS 78  NO              
+ RUS 78  NO2              J 3/77  N2               RUS 78  N2O              J 3/77  O                J 6/77  OH              
+ J 3/77  O2               J 3/78  C(GR)            J 3/79  H2O(L)          
+ &OTTINP
+ KASE    =        1359,
+ TRACE   =  0.0000000E+00,
+ CR      =   11.50000    ,
+ FREQ    =   9500.000    ,
+ BORE    =   10.92200    ,
+ STROKE  =   10.31200    ,
+ ROD     =   17.14500    ,
+ CA      =   129.0300    ,
+ HP      = F,
+ SP      = T,
+ TAIR    =  0.0000000E+00,
+ PFUEL   =  0.0000000E+00,
+ PMFOLD  =   4.750000    ,
+ PEXH    =   1.000000    ,
+ RHUMID  =  0.0000000E+00,
+ TW      =   360.0000    ,
+ HC1     =  0.0000000E+00,
+ HC2     =  0.0000000E+00,
+ HC3     =  0.0000000E+00,
+ HC4     =  0.0000000E+00,
+ HA      =  0.0000000E+00,
+ HB      =  0.0000000E+00,
+ HLEN    =  0.0000000E+00,
+ B1      =   1.000000    ,
+ B2      =  0.0000000E+00,
+ CSBURN  = T,
+ AN      =  0.5000000    , -0.5000000    , 6*0.0000000E+00  ,
+ BETA    =  0.0000000E+00
+ /
+ &AFINP
+ VARAF   = F,
+ NCYCLE  =          12,
+ DEBUG   = F,
+ IPRINT  = 12*0,
+ AF      =  -1.000000    ,
+ FA      =  -1.000000    ,
+ EQRAT   =   1.000000    ,
+ PHI     =  -1.000000    ,
+ FPCT    =  -1.000000    ,
+ EGR     =  0.0000000E+00,
+ TEGR    =  0.0000000E+00,
+ SPARK   =   40.00000    ,
+ THBURN  =   100.0000    ,
+ TAU     =  0.0000000E+00,
+ KINET   =           4,
+ IFLOW   =           7,
+ KFLAME  =          10,
+ NEWAVG  = T
+ /
+ &FLOWIN
+ AIN     =  0.9500000    , 2*0.0000000E+00  ,
+ AINR    =   1.000000    , 2*0.0000000E+00  ,
+ AEX     =   1.000000    , 2*0.0000000E+00  ,
+ AEXR    =  0.9500000    , 2*0.0000000E+00  ,
+ BIN     =  5.0000001E-02, 2*0.0000000E+00  ,
+ BINR    =  5.0000001E-02, 2*0.0000000E+00  ,
+ BEX     = 3*0.0000000E+00  ,
+ BEXR    = 3*0.0000000E+00  ,
+ DIN     =   5.080000    ,
+ DEX     =   5.080000    ,
+ BETAIN  =   45.00000    ,
+ BETAEX  =   45.00000    ,
+ ALFAIN  =  0.0000000E+00,
+ ALFAEX  =  0.0000000E+00,
+ LIN     =   2.200000    ,
+ LEX     =   1.800000    ,
+ LINR    =   2.200000    ,
+ LEXR    =   1.800000    ,
+ RIN     =  -1.28489690794440     ,  -50.1873460746040     ,   1096.82837067560     ,  -8957.67653343120     ,
+    39006.9488710830     ,  -100238.562748390     ,   156517.076797420     ,  -145707.727372960     ,   74242.5335376450     ,
+   -15911.6022123270     ,
+ REX     =  -1.75704296271310     ,  -29.7070171358390     ,   740.077437817570     ,  -5709.71977608220     ,
+    22840.4041747650     ,  -53412.1296202180     ,   75446.0923213600     ,  -63124.3199644950     ,   28632.5854304030     ,
+   -5383.95601712240     ,
+ EIN     =  0.0000000E+00,  -20.00000    ,   2.000000    ,  0.0000000E+00,
+ EINR    =  0.0000000E+00,  -20.00000    ,   2.000000    ,  0.0000000E+00,
+ EEX     =  0.0000000E+00,  -15.00000    ,   2.000000    ,  0.0000000E+00,
+ EEXR    =  0.0000000E+00,  -15.00000    ,   2.000000    ,  0.0000000E+00,
+ POLY    = F,
+ IVOPEN  =   699.0000    ,
+ IVSHUT  =   265.0000    ,
+ EVOPEN  =   465.0000    ,
+ EVSHUT  =   45.00000    ,
+ NEX     =           1,
+ NIN     =           1
+ /
+0FUELS
+
+   CH3OH         L 4/80
+0TRANSPORT PROPERTIES     VISCOSITY - MICROPOISE     CONDUCTIVITY - MICROWATT/CM-K
+0  LN (VISC OR COND) = A*LN T + B/T + C/T**2 + D 
+0      TEMP RANGE        A              B              C              D
+
+ AIR                               V2C2
+ V   300.00  1000.00 0.60895377E+00-0.42843220E+02-0.11325133E+04 0.19053012E+01
+ C   300.00  1000.00 0.87626177E+00 0.51636890E+02-0.46371353E+04 0.43274754E+00
+ V  1000.00  5000.00 0.64804834E+00 0.22433407E+02-0.18264803E+05 0.15871360E+01
+ C  1000.00  5000.00 0.68643242E+00-0.89154091E+02-0.21012637E+05 0.19004375E+01
+ AR                                V2C2
+ V   300.00  1000.00 0.57067549E+00-0.95117332E+02 0.20896404E+04 0.24718809E+01
+ V  1000.00  5000.00 0.65601182E+00 0.51780499E+02-0.33046715E+05 0.17711406E+01
+ C   300.00  1000.00 0.56758529E+00-0.10015251E+03 0.25736599E+04 0.22537408E+01
+ C  1000.00  5000.00 0.64275515E+00 0.14112909E+02-0.20639082E+05 0.16440096E+01
+ CH                                V2C2
+ V   300.00  1000.00 0.63306701E+00-0.75491295E+01-0.21396736E+04 0.14781500E+01
+ V  1000.00  5000.00 0.64807343E+00 0.31141665E+01-0.18292566E+04 0.13638041E+01
+ C   300.00  1000.00 0.10884807E+01 0.27220319E+03-0.22480092E+05-0.64679027E+00
+ C  1000.00  5000.00 0.44721562E+00-0.10513210E+04 0.28092259E+06 0.48038688E+01
+ CH3OH                             V2C2
+ V   300.00  1000.00 0.62326825E+00-0.28139532E+03 0.23329867E+05 0.17003402E+01
+ V  1000.00  5000.00 0.60590994E+00-0.19198488E+03-0.25158891E+05 0.17778509E+01
+ C   300.00  1000.00 0.10211686E+01-0.44472491E+03 0.41226363E+05 0.43413535E+00
+ C  1000.00  5000.00 0.45440984E+00-0.11298018E+04 0.14206088E+06 0.49230571E+01
+ CH4                               V2C2
+ V   300.00  1000.00 0.57388073E+00-0.98544159E+02 0.20012205E+04 0.17536016E+01
+ V  1000.00  5000.00 0.65074533E+00 0.23936771E+02-0.22020184E+05 0.11244057E+01
+ C   300.00  1000.00 0.11770360E+01-0.17422121E+03 0.22865562E+05-0.55146849E+00
+ C  1000.00  5000.00 0.49214768E+00-0.91598346E+03 0.87265125E+05 0.48489413E+01
+ CO                                V2C2
+ V   300.00  1000.00 0.60443938E+00-0.43632706E+02-0.88441949E+03 0.18972150E+01
+ V  1000.00  5000.00 0.65060586E+00 0.28517448E+02-0.16690236E+05 0.15223271E+01
+ C   300.00  1000.00 0.83001482E+00 0.59139030E+02-0.98639404E+04 0.70962876E+00
+ C  1000.00  5000.00 0.65030086E+00-0.15100725E+03-0.16723855E+05 0.21699140E+01
+ CO2                               V2C2
+ V   300.00  1000.00 0.54330319E+00-0.18823898E+03 0.88726562E+04 0.24499362E+01
+ V  1000.00  5000.00 0.65318877E+00 0.51738758E+02-0.62834883E+05 0.15227045E+01
+ C   300.00  1000.00 0.53726172E+00-0.49928333E+03 0.37397504E+05 0.32903619E+01
+ C  1000.00  5000.00 0.66068184E+00-0.12741845E+03-0.81580328E+05 0.21817906E+01
+ H                                 V2C2
+ V   300.00  1000.00 0.58190584E+00 0.46941425E+02-0.68759580E+04 0.91591907E+00
+ V  1000.00  5000.00 0.51631898E+00-0.14613202E+04 0.71446144E+06 0.21559014E+01
+ C   300.00  1000.00 0.58190584E+00 0.46941425E+02-0.68759580E+04 0.43477960E+01
+ C  1000.00  5000.00 0.51631898E+00-0.14613202E+04 0.71446144E+06 0.55877786E+01
+ H2                                V2C2
+ V   300.00  1000.00 0.68887645E+00 0.48727169E+01-0.59565051E+03 0.55569577E+00
+ V  1000.00  5000.00 0.70504379E+00 0.36287685E+02-0.72255552E+04 0.41921607E+00
+ C   300.00  1000.00 0.93724942E+00 0.19013310E+03-0.19701961E+05 0.17545108E+01
+ C  1000.00  5000.00 0.74368399E+00-0.54941901E+03 0.25676377E+06 0.35553997E+01
+ H2O                               V2C2
+ V   300.00  1000.00 0.78387779E+00-0.38260406E+03 0.49040156E+05 0.85222787E+00
+ V  1000.00  5000.00 0.50714993E+00-0.68966913E+03 0.87454750E+05 0.30285156E+01
+ C   300.00  1000.00 0.15541443E+01 0.66106308E+02 0.55969888E+04-0.39259598E+01
+ C  1000.00  5000.00 0.79349506E+00-0.13340063E+04 0.37864328E+06 0.23591473E+01
+ H2O2                              V2C2
+ V   300.00  1000.00 0.99686873E+00-0.41461067E+02 0.87172900E+04-0.15770257E+01
+ V  1000.00  5000.00 0.57419479E+00-0.50408984E+03 0.48898234E+05 0.17621537E+01
+ C   300.00  1000.00 0.11075594E+01-0.20746382E+03 0.23930396E+05-0.12685243E+01
+ C  1000.00  5000.00 0.46981212E+00-0.11937657E+04 0.22076994E+06 0.39203830E+01
+ NH                                V2C2
+ V   300.00  1000.00 0.63709855E+00-0.36353872E+01-0.22869700E+04 0.15599278E+01
+ V  1000.00  5000.00 0.64806521E+00 0.29290819E+01-0.16401980E+04 0.14772122E+01
+ C   300.00  1000.00 0.94940466E+00 0.19417023E+03-0.17195992E+05 0.32016456E+00
+ C  1000.00  5000.00 0.86518747E+00 0.25156773E+03-0.12770184E+06 0.95443398E+00
+ NO                                V2C2
+ V   300.00  1000.00 0.59536070E+00-0.57867416E+02-0.38658606E+03 0.20594392E+01
+ V  1000.00  5000.00 0.65096664E+00 0.19493763E+02-0.13229282E+05 0.16106960E+01
+ C   300.00  1000.00 0.95581985E+00 0.12705354E+03-0.14468456E+05-0.15581681E+00
+ C  1000.00  5000.00 0.65454143E+00-0.10184116E+03-0.30492855E+05 0.21672442E+01
+ NO2                               V2C2
+ V   300.00  1000.00 0.55638659E+00-0.15082684E+03 0.54896587E+04 0.23748777E+01
+ V  1000.00  5000.00 0.65567487E+00 0.57106125E+02-0.53285016E+05 0.15402063E+01
+ C   300.00  1000.00 0.63306922E+00-0.33284540E+03 0.24120736E+05 0.24663012E+01
+ C  1000.00  5000.00 0.62299842E+00-0.12701358E+03-0.69901508E+05 0.24212675E+01
+ N2                                V2C2
+ V   300.00  1000.00 0.60443938E+00-0.43632706E+02-0.88441949E+03 0.18972150E+01
+ V  1000.00  5000.00 0.65060586E+00 0.28517448E+02-0.16690236E+05 0.15223271E+01
+ C   300.00  1000.00 0.94306386E+00 0.12279898E+03-0.11839435E+05-0.10668773E+00
+ C  1000.00  5000.00 0.65147781E+00-0.15059801E+03-0.13746760E+05 0.21801631E+01
+ O                                 V2C2
+ V   300.00  1000.00 0.73101991E+00 0.60468345E+01 0.35630371E+04 0.10955772E+01
+ V  1000.00  5000.00 0.79832548E+00 0.18039626E+03-0.53243242E+05 0.51131028E+00
+ C   300.00  1000.00 0.73824501E+00 0.11221345E+02 0.31668245E+04 0.17085307E+01
+ C  1000.00  5000.00 0.79819262E+00 0.17970493E+03-0.52900891E+05 0.11797640E+01
+ OH                                V2C2
+ V   300.00  1000.00 0.78530133E+00-0.16524902E+03 0.12621544E+05 0.69788975E+00
+ V  1000.00  5000.00 0.58936638E+00-0.36223419E+03 0.23355307E+05 0.22363455E+01
+ C   300.00  1000.00 0.10657500E+01 0.45300526E+02-0.37257803E+04-0.49894756E+00
+ C  1000.00  5000.00 0.58415550E+00-0.87533539E+03 0.20830503E+06 0.35371017E+01
+ O2                                V2C2
+ V   300.00  1000.00 0.61936355E+00-0.44608608E+02-0.13460714E+04 0.19597563E+01
+ V  1000.00  5000.00 0.63839561E+00-0.12344438E+01-0.22885811E+05 0.18056937E+01
+ C   300.00  1000.00 0.81595343E+00-0.34366856E+02 0.22785081E+04 0.10050999E+01
+ C  1000.00  5000.00 0.80805790E+00 0.11982181E+03-0.47335930E+05 0.95189196E+00
+0REACTION MECHANISM AND RATES (MOLES/CM**3 -SEC)
+          K= A*T**N *EXP(-E/RT)
+                                                                                A            N   E(CAL/MOLE)
+
+   1) 0.0   M       + 1.0   CH3OH    =  1.0   CH3     + 1.0   OH           0.3200E+19       0.0   80000.0
+   2) 1.0   O2      + 1.0   CH3OH    =  1.0   CH2OH   + 1.0   HO2          0.4000E+14       0.0   50900.0
+   3) 1.0   OH      + 1.0   CH3OH    =  1.0   CH2OH   + 1.0   H2O          0.4000E+13       0.0    2000.0
+   4) 1.0   O       + 1.0   CH3OH    =  1.0   CH2OH   + 1.0   OH           0.1600E+13       0.0    2300.0
+   5) 1.0   H       + 1.0   CH3OH    =  1.0   CH2OH   + 1.0   H2           0.3200E+14       0.0    7000.0
+   6) 1.0   H       + 1.0   CH3OH    =  1.0   CH3     + 1.0   H2O          0.5000E+13       0.0    5300.0
+   7) 1.0   CH3     + 1.0   CH3OH    =  1.0   CH2OH   + 1.0   CH4          0.2000E+12       0.0    9800.0
+   8) 1.0   HO2     + 1.0   CH3OH    =  1.0   CH2OH   + 1.0   H2O2         0.6300E+13       0.0   19400.0
+   9) 0.0   M       + 1.0   CH2OH    =  1.0   CH2O    + 1.0   H            0.2500E+14       0.0   29000.0
+  10) 1.0   O2      + 1.0   CH2OH    =  1.0   CH2O    + 1.0   HO2          0.1000E+13       0.0    6000.0
+  11) 0.0           + 1.0   CH4      =  1.0   CH3     + 1.0   H            0.2000E+16       0.0  104000.0
+  12) 1.0   H       + 1.0   CH4      =  1.0   CH3     + 1.0   H2           0.1260E+15       0.0   11900.0
+  13) 1.0   O       + 1.0   CH4      =  1.0   CH3     + 1.0   OH           0.2000E+14       0.0    9200.0
+  14) 1.0   OH      + 1.0   CH4      =  1.0   CH3     + 1.0   H2O          0.3000E+14       0.0    6000.0
+  15) 1.0   CH      + 1.0   O2       =  1.0   HCO     + 1.0   O            0.1000E+14       0.0       0.0
+  16) 1.0   CH2     + 1.0   O2       =  1.0   CH2O    + 1.0   O            0.1000E+15       0.0    3700.0
+  17) 1.0   CH3     + 1.0   O2       =  1.0   CH2O    + 1.0   OH           0.1700E+13       0.0   14000.0
+  18) 1.0   CH3     + 1.0   O        =  1.0   CH2O    + 1.0   H            0.6800E+14       0.0       0.0
+  19) 1.0   CH2O    + 1.0   H        =  1.0   HCO     + 1.0   H2           0.2000E+14       0.0    3300.0
+  20) 1.0   CH2O    + 1.0   O        =  1.0   HCO     + 1.0   OH           0.5000E+14       0.0    4570.0
+  21) 1.0   CH2O    + 1.0   OH       =  1.0   HCO     + 1.0   H2O          0.5000E+16       0.0   13000.0
+  22) 1.0   HCO     + 1.0   O        =  1.0   CO      + 1.0   OH           0.3000E+14       0.0       0.0
+  23) 1.0   HCO     + 1.0   H        =  1.0   CO      + 1.0   H2           0.2000E+14       0.0       0.0
+  24) 1.0   HCO     + 1.0   OH       =  1.0   CO      + 1.0   H2O          0.3000E+14       0.0       0.0
+  25) 0.0   M       + 1.0   HCO      =  1.0   H       + 1.0   CO           0.3000E+15       0.0   14700.0
+  26) 1.0   CO      + 1.0   OH       =  1.0   CO2     + 1.0   H            0.4000E+13       0.0    8000.0
+  27) 1.0   CO      + 1.0   O        =  1.0   CO2     + 0.0   M            0.2800E+14       0.0   -4540.0
+  28) 1.0   CO      + 1.0   O2       =  1.0   CO2     + 1.0   O            0.1200E+12       0.0   35000.0
+  29) 1.0   H       + 1.0   O2       =  1.0   OH      + 1.0   O            0.2200E+15       0.0   16790.0
+  30) 1.0   O       + 1.0   H2       =  1.0   OH      + 1.0   H            0.1800E+11       1.0    8900.0
+  31) 1.0   H2      + 1.0   OH       =  1.0   H2O     + 1.0   H            0.5200E+14       0.0    6500.0
+  32) 1.0   OH      + 1.0   OH       =  1.0   O       + 1.0   H2O          0.6300E+13       0.0    1093.0
+  33) 1.0   H       + 1.0   O2       =  1.0   HO2     + 0.0   M            0.1500E+16       0.0   -1000.0
+  34) 1.0   O       + 1.0   O        =  1.0   O2      + 0.0   M            0.5700E+14       0.0   -1788.0
+  35) 1.0   H       + 1.0   H        =  1.0   H2      + 0.0   M            0.8300E+18      -1.0       0.0
+  36) 1.0   H       + 1.0   OH       =  1.0   H2O     + 0.0   M            0.8400E+22      -2.0       0.0
+  37) 1.0   H       + 1.0   CH3      =  1.0   H2      + 1.0   CH2          0.2700E+12       0.7   25700.0
+  38) 1.0   O       + 1.0   CH3      =  1.0   OH      + 1.0   CH2          0.1900E+12       0.7   25700.0
+  39) 1.0   OH      + 1.0   CH3      =  1.0   H2O     + 1.0   CH2          0.2700E+12       0.7   25700.0
+  40) 1.0   H       + 1.0   CH2      =  1.0   H2      + 1.0   CH           0.2900E+12       0.7   26000.0
+  41) 1.0   O       + 1.0   CH2      =  1.0   OH      + 1.0   CH           0.3200E+12       0.5   26000.0
+  42) 1.0   OH      + 1.0   CH2      =  1.0   H2O     + 1.0   CH           0.5000E+12       0.5    6000.0
+  43) 1.0   HO2     + 1.0   NO       =  1.0   NO2     + 1.0   OH           0.1200E+14       0.0    2380.0
+  44) 1.0   O       + 1.0   NO2      =  1.0   NO      + 1.0   O2           0.1000E+14       0.0     596.0
+  45) 1.0   NO      + 1.0   O        =  1.0   NO2     + 0.0   M            0.5620E+16       0.0   -1160.0
+  46) 1.0   NO2     + 1.0   H        =  1.0   NO      + 1.0   OH           0.2900E+15       0.0     795.0
+  47) 1.0   N       + 1.0   O2       =  1.0   NO      + 1.0   O            0.6400E+10       1.0    6250.0
+  48) 1.0   O       + 1.0   N2       =  1.0   NO      + 1.0   N            0.1800E+15       0.0   76250.0
+  49) 1.0   N       + 1.0   OH       =  1.0   NO      + 1.0   H            0.4000E+14       0.0       0.0
+  50) 1.0   CN      + 1.0   H2       =  1.0   HCN     + 1.0   H            0.6000E+14       0.0    5300.0
+  51) 1.0   O       + 1.0   HCN      =  1.0   H       + 1.0   NCO          0.5200E+13       0.7    8100.0
+  52) 1.0   OH      + 1.0   HCN      =  1.0   HNCO    + 1.0   H            0.4000E+12       0.0    2800.0
+  53) 1.0   CN      + 1.0   O        =  1.0   CO      + 1.0   N            0.1200E+14       0.0       0.0
+  54) 1.0   CN      + 1.0   OH       =  1.0   NCO     + 1.0   H            0.2500E+15       0.0    6000.0
+  55) 1.0   CN      + 1.0   O2       =  1.0   NCO     + 1.0   O            0.3200E+14       0.0    1000.0
+  56) 1.0   CN      + 1.0   CO2      =  1.0   NCO     + 1.0   CO           0.3700E+13       0.0       0.0
+  57) 1.0   O       + 1.0   NCO      =  1.0   NO      + 1.0   CO           0.2000E+14       0.0       0.0
+  58) 1.0   N       + 1.0   NCO      =  1.0   N2      + 1.0   CO           0.1000E+14       0.0       0.0
+  59) 1.0   H       + 1.0   NCO      =  1.0   NH      + 1.0   CO           0.2000E+14       0.0       0.0
+  60) 1.0   H2      + 1.0   NCO      =  1.0   HNCO    + 1.0   H            0.1000E+15       0.0    9000.0
+  61) 1.0   HNCO    + 1.0   H        =  1.0   NH2     + 1.0   CO           0.1000E+15       0.0    8500.0
+  62) 1.0   NH      + 1.0   OH       =  1.0   N       + 1.0   H2O          0.5000E+12       0.5    1999.0
+  63) 1.0   H       + 1.0   HO2      =  1.0   OH      + 1.0   OH           0.1400E+15       0.0    1070.0
+  64) 1.0   H       + 1.0   HO2      =  1.0   O       + 1.0   H2O          0.1000E+14       0.0    1000.0
+  65) 1.0   O       + 1.0   HO2      =  1.0   OH      + 1.0   O2           0.1600E+14       0.0    1070.0
+  66) 1.0   OH      + 1.0   HO2      =  1.0   H2O     + 1.0   O2           0.7900E+13       0.0       0.0
+  67) 1.0   CH3     + 1.0   OH       =  1.0   CH2O    + 1.0   H2           0.7400E+13       0.0       0.0
+  68) 1.0   H2      + 1.0   HO2      =  1.0   H2O     + 1.0   OH           0.7200E+12       0.0   18700.0
+  69) 1.0   HCO     + 1.0   O2       =  1.0   CO      + 1.0   HO2          0.3000E+14       0.0       0.0
+  70) 1.0   OH      + 1.0   H2O2     =  1.0   H2O     + 1.0   HO2          0.1000E+14       0.0    1800.0
+  71) 1.0   O2      + 1.0   H2O2     =  2.0   HO2     + 0.0                0.4000E+14       0.0   42600.0
+  72) 1.0   H       + 1.0   H2O2     =  1.0   HO2     + 1.0   H2           0.1600E+13       0.0    3800.0
+  73) 0.0   M       + 1.0   H2O2     =  2.0   OH      + 0.0                0.1300E+18       0.0   45500.0
+0
+0THIRD BODY EFFICIENCIES
+
+
+      1.0   H       + 1.0   O2       =  1.0   HO2     + 0.0   M          O2        2.000  N2        2.000
+      1.0   H       + 1.0   O2       =  1.0   HO2     + 0.0   M          H2O      32.500  CO2       7.500
+      1.0   H       + 1.0   O2       =  1.0   HO2     + 0.0   M          CO        2.000            0.000
+      1.0   H       + 1.0   OH       =  1.0   H2O     + 0.0   M          O2        1.600  H2O      20.000
+      1.0   H       + 1.0   OH       =  1.0   H2O     + 0.0   M          N2        1.600  CO2       7.500
+      1.0   H       + 1.0   OH       =  1.0   H2O     + 0.0   M          CO        1.600            0.000
+0KINETIC ORDER OF SPECIES FOR FLOW CALCULATIONS EXCEPT DURING COMBUSTION
+  AR            C             CH            CH2           CH2O          CH3           CH2OH         CH4         
+  CH3OH         CN            CO            CO2           H             HCN           HCO           HNCO        
+  HO2           H2            H2O           H2O2          N             NCO           NH            NH2         
+  NO            NO2           N2            N2O           O             OH            O2            CH3OH       
+  AIR         
+0KINETIC ORDER OF SPECIES DURING COMBUSTION AND EXPANSION WITHOUT FLOW
+  CH3OH         CH3           OH            O2            CH2OH         HO2           H2O           O           
+  H             H2            CH4           H2O2          CH2O          CH            HCO           CH2         
+  CO            CO2           NO            NO2           N             N2            CN            HCN         
+  NCO           HNCO          NH            NH2           AR            C             N2O         
+1
+0AF =   6.473101
+                          EFFECTIVE FUEL          EFFECTIVE OXIDANT            MIXTURE
+ ENTHALPY                     HPP(2)                   HPP(1)                   HSUB0
+ (KG-MOL)(DEG K)/KG      -0.75486224E+03          -0.51757061E+00          -0.10145889E+03
+0KG-ATOMS/KG                 B0P(I,2)                 B0P(I,1)                  B0(I)
+       C                  0.31209038E-01           0.11013255E-04           0.41857226E-02
+       H                  0.12483615E+00           0.00000000E+00           0.16704732E-01
+       O                  0.31209038E-01           0.14486054E-01           0.16723811E-01
+       N                  0.00000000E+00           0.53915919E-01           0.46701255E-01
+       AR                 0.00000000E+00           0.32332014E-03           0.28005561E-03
+
+
+0TOTAL COMPUTER TIME=   0.000 SEC        DELTA TIME =  0.000 SEC
+
+ ADD H2O(L)      
+0THE TEMPERATURE=  0.2981E+03 IS OUT OF RANGE FOR POINT    8
+
+
+0TOTAL COMPUTER TIME=   0.000 SEC        DELTA TIME =  0.000 SEC
+
+0SINGULAR MATRIX, ITERATION  2  VARIABLE  3
+0SINGULAR MATRIX, ITERATION  4  VARIABLE  5
+0WARNING--POINT  8  USES A REDUCED SET OF COMPONENTS AND NO SPECIES USING THE ELIMINATED COMPONENT ARE CALCULATED.
+ ADD H2O(L)      
+0THE TEMPERATURE=  0.2981E+03 IS OUT OF RANGE FOR POINT    8
+
+
+0TOTAL COMPUTER TIME=   0.000 SEC        DELTA TIME =  0.000 SEC
+
+0SINGULAR MATRIX, ITERATION  2  VARIABLE  5
+0SINGULAR MATRIX, ITERATION  4  VARIABLE  5
+0WARNING--POINT  8  USES A REDUCED SET OF COMPONENTS AND NO SPECIES USING THE ELIMINATED COMPONENT ARE CALCULATED.
+ ADD H2O(L)      
+0THE TEMPERATURE=  0.2981E+03 IS OUT OF RANGE FOR POINT    8
+1INTERNAL COMBUSTION ENGINE MODEL ZMOTTO                                    CYCLE   3    LEVEL 1    CASE NO.     1359
+     REF:  ZELEZNIK, FRANK J.; AND MCBRIDE, BONNIE J.:  MODELING THE INTERNAL COMBUSTION ENGINE. NASA RP-1094, 1985.
+0COMPRESSION RATIO =  11.5     RPM = 9500.0     EGR = 0.000     T(EGR) =  298.1 K     SPARK ADVANCE =  40.00 DEG
+ FUEL PRESSURE = 1.00000 ATM     MANIFOLD PRESSURE = 4.75000 ATM     EXHAUST PRESSURE = 1.00000 ATM
+ PRESSURE DISCONTINUITIES ARE ISENTROPIC
+0                                                                            WT FRACTION   ENERGY   STATE   TEMP
+          CHEMICAL FORMULA                                                                 CAL/MOL          DEG K
+ FUEL    C  1.00000   H  4.00000   O  1.00000                                   1.000000   -48064.793  G    298.15
+ AIR     N  1.56168   O  0.41959   AR 0.00936   C  0.00032                      1.000000      -29.791  G    298.15
+0                  A/F=  6.4731   PERCENT FUEL=  13.3813   EQUIVALENCE RATIO= 1.0000   PHI=   1.0000
+ FUEL MASS FRACTION = 0.132862                       INDICATED MEAN EFFECTIVE PRESSURE (ATM) = 35.5016
+ AIR MASS FRACTION = 0.860032                        PUMP MEAN EFFECTIVE PRESSURE (ATM) =  3.7500
+ RESIDUAL MASS FRACTION = 0.007106                   CHEMICAL ENERGY (JOULES/G) =3132.232
+ RECIRCULATED MASS FRACTION = 0.000000               MASS EFFICIENCY = 0.992894
+ MASS FRACTION EXHAUST RETAINED = 0.007106           VOLUME EFFICIENCY = 0.974488
+ NET WORK EFFICIENCY = 0.312567                      FRACTIONAL MASS CHANGE 6 - 7 =-0.918280
+0THERMODYNAMIC PROPERTIES
+0STATION                        2        3        4        5        6        7
+ P, ATM           4.7500   4.7500   4.7500   34.301   143.67   23.516   1.0000   1.0000
+ T, DEG K          448.5    580.2    457.7    735.1   2860.0   2128.1   1107.4    298.1
+ RHO, G/CC      3.7873-3 2.9077-3 3.7091-3 1.6678-2 1.6678-2 3.7091-3 3.0311-4 1.4238-3
+ H, CAL/G        -162.69  -194.12  -164.83  -86.045   72.762  -253.94  -612.17  -954.87
+ U, CAL/G        -193.06  -233.68  -195.84  -135.85  -135.85  -407.48  -692.07  -971.88
+ S, CAL/(G)(K)    1.6510   1.7553   1.6601   1.6601   2.1284   2.1284   2.1284   1.4922
+ CP, CAL/(G)(K)   0.2668   0.2827   0.2680   0.3001   0.5758   0.3917   0.3275   0.9194
+ GAMMA (S)        1.3401   1.3178   1.3384   1.2917   1.1783   1.2311   1.2825   1.1373
+ M, MOL WT        29.342   29.144   29.329   29.329   27.244   27.543   27.543   34.833
+0NOTES ON MOLE FRACTIONS:
+ A) STATION 2 RESIDUAL GAS FROM PREVIOUS CYCLE; B) MOLES NO FROZEN AFTER COMBUSTION(STATION 5)
+0MOLE FRACTIONS
+
+ AR              0.00000  0.00085  0.00006  0.00006  0.00763  0.00771  0.00771  0.00774
+ CO              0.00000  0.00057  0.00004  0.00004  0.01832  0.00518  0.00518  0.00000
+ CO2             0.00000  0.01215  0.00083  0.00083  0.09572  0.11011  0.11011  0.11573
+ H               0.00000  0.00000  0.00000  0.00000  0.00064  0.00004  0.00004  0.00000
+ HO2             0.00000  0.00000  0.00000  0.00000  0.00002  0.00000  0.00000  0.00000
+ H2              0.00000  0.00023  0.00002  0.00002  0.00596  0.00214  0.00214  0.00000
+ H2O             0.00000  0.02511  0.00172  0.00172  0.21768  0.22765  0.22765  0.02466
+ NO              0.00000  0.00073  0.00005  0.00005  0.00653  0.00660  0.00660  0.00000
+ NO2             0.00000  0.00000  0.00000  0.00000  0.00001  0.00000  0.00000  0.00000
+ N2              0.00000  0.07058  0.00484  0.00484  0.63288  0.63984  0.63984  0.64560
+ O               0.00000  0.00000  0.00000  0.00000  0.00047  0.00001  0.00001  0.00000
+ OH              0.00000  0.00005  0.00000  0.00000  0.00714  0.00048  0.00048  0.00000
+ O2              0.00000  0.00003  0.00000  0.00000  0.00698  0.00024  0.00024  0.00000
+ H2O(L)          0.00000  0.00000  0.00000  0.00000  0.00000  0.00000  0.00000  0.20627
+ CH3OH           0.12254  0.10902  0.12161  0.12161  0.00000  0.00000  0.00000  0.00000
+ AIR             0.87746  0.78068  0.87082  0.87082  0.00000  0.00000  0.00000  0.00000
+
+
+0TOTAL COMPUTER TIME=   0.000 SEC        DELTA TIME =  0.000 SEC
+
+1
+
+
+0TOTAL COMPUTER TIME=   0.000 SEC        DELTA TIME =  0.000 SEC
+
+0SINGULAR MATRIX, ITERATION  2  VARIABLE  5
+0SINGULAR MATRIX, ITERATION  4  VARIABLE  5
+0WARNING--POINT  3  USES A REDUCED SET OF COMPONENTS AND NO SPECIES USING THE ELIMINATED COMPONENT ARE CALCULATED.
+ ADD H2O(L)      
+0THE TEMPERATURE=  0.2981E+03 IS OUT OF RANGE FOR POINT    3
+
+
+0TOTAL COMPUTER TIME=   0.000 SEC        DELTA TIME =  0.000 SEC
+
+
+
+0TOTAL COMPUTER TIME=   0.000 SEC        DELTA TIME =  0.000 SEC
+
+
+
+0TOTAL COMPUTER TIME=   0.000 SEC        DELTA TIME =  0.000 SEC
+
+0SINGULAR MATRIX, ITERATION  2  VARIABLE  5
+0SINGULAR MATRIX, ITERATION  4  VARIABLE  5
+0WARNING--POINT 15  USES A REDUCED SET OF COMPONENTS AND NO SPECIES USING THE ELIMINATED COMPONENT ARE CALCULATED.
+ ADD H2O(L)      
+0THE TEMPERATURE=  0.2981E+03 IS OUT OF RANGE FOR POINT   15
+
+
+0TOTAL COMPUTER TIME=   0.000 SEC        DELTA TIME =  0.000 SEC
+
+1INTERNAL COMBUSTION ENGINE MODEL ZMOTTO                                    CYCLE   1    LEVEL 2    CASE NO.     1359
+     REF:  ZELEZNIK, FRANK J.; AND MCBRIDE, BONNIE J.:  MODELING THE INTERNAL COMBUSTION ENGINE. NASA RP-1094, 1985.
+0COMPRESSION RATIO =  11.5     RPM = 9500.0     EGR = 0.000     T(EGR) =  298.1 K     SPARK ADVANCE =  40.00 DEG
+ FUEL PRESSURE = 1.00000 ATM     MANIFOLD PRESSURE = 4.75000 ATM     EXHAUST PRESSURE = 1.00000 ATM
+ PRESSURE DISCONTINUITIES ARE ISENTROPIC
+ BORE = 10.922 CM     STROKE = 10.312 CM     ROD = 17.145 CM     CHAMBER AREA =129.030 SQ CM     WALL TEMP =  360.0 K
+ TOTAL VOLUME = 1058.15 CC     DISPLACEMENT VOLUME =  966.13 CC
+0IVOPEN =   0.00 DEG     IVSHUT = 180.00 DEG                         EVOPEN = 540.00 DEG     EVSHUT = 720.00 DEG
+
+ EICHELBERG HEAT TRANSFER COEFICIENT
+0EQUILIBRIUM FLAME    FINITE BURNING INTERVAL = 99.4 DEG    COSINE  COMBUSTION    TAU =0.0000E+00 SEC    BETA =   0.000
+          AN =   0.500000  -0.500000
+0                                                                            WT FRACTION   ENERGY   STATE   TEMP
+          CHEMICAL FORMULA                                                                 CAL/MOL          DEG K
+ FUEL    C  1.00000   H  4.00000   O  1.00000                                   1.000000   -48064.793  G    298.15
+ AIR     N  1.56168   O  0.41959   AR 0.00936   C  0.00032                      1.000000      -29.791  G    298.15
+0                  A/F=  6.4731   PERCENT FUEL=  13.3813   EQUIVALENCE RATIO= 1.0000   PHI=   1.0000
+0                                      PERFORMANCE PARAMETERS FOR ONE CYLINDER
+0      MASS PER CYCLE (G)                 MEAN INTAKE MASS FLOW RATE (G/SEC)       MEAN EXHAUST MASS FLOW RATE (G/SEC)
+0     TOTAL        3.93286                      CHARGE      309.1435                      EXHAUST     308.7188
+      FUEL         0.52254                      FUEL         41.3675                      CO           0.45608
+      AIR          3.38243                      AIR         267.7760                      NOX          0.66410
+0   ENERGY PER CYCLE (JOULES)              AVERAGE ENERGY RATE - POWER (KW)                CYCLE EFFICIENCIES
+
+  INDICATED WORK       4449.471             INDICATED POWER       352.250                NET WORK      0.390994
+  INDICATED PUMP WORK   367.100             INDICATED PUMP POWER   29.062                HEAT LOSS     0.038795
+  HEAT LOSS             477.908             HEAT LOSS RATE         37.834                EXHAUST       0.382817
+  CHEM. ENERGY        12318.781             EXHAUST POWER         373.337
+0                                                    MISCELLANEOUS
+0                              INDICATED MEAN EFFECTIVE PRESSURE (ATM)            45.4522
+                               PUMP MEAN EFFECTIVE PRESSURE (ATM)                  3.7500
+                               MEAN TORQUE (NEWTON-METERS)                       383.2905
+0COMPOSITE EXHAUST GAS MOLE FRACTIONS AT  992.67 K  AND  1.0000 ATM      MOLECULAR WEIGHT =  27.617
+      AR       0.007734      CO       0.001457      CO2      0.114142      H        0.000004      H2       0.000710
+      H2O      0.229903      NO       0.001980      N2       0.643893      OH       0.000110      O2       0.000067
+0FRESH CHARGE MOLE FRACTIONS AT  448.48 K  AND  4.7500 ATM      MOLECULAR WEIGHT =  29.342
+      CH3OH    0.122538      AIR      0.877462
+0NOTE:  INTAKE AND EXHAUST VALUES CALCULATED WHEN THE VALVES CLOSE.
+0COMPUTER CYCLE TIME=   0.000 SEC
+1
+
+
+0TOTAL COMPUTER TIME=   0.000 SEC        DELTA TIME =  0.000 SEC
+
+0SINGULAR MATRIX, ITERATION  2  VARIABLE  5
+0SINGULAR MATRIX, ITERATION  4  VARIABLE  5
+0WARNING--POINT  3  USES A REDUCED SET OF COMPONENTS AND NO SPECIES USING THE ELIMINATED COMPONENT ARE CALCULATED.
+ ADD H2O(L)      
+0THE TEMPERATURE=  0.2981E+03 IS OUT OF RANGE FOR POINT    3
+
+
+0TOTAL COMPUTER TIME=   0.000 SEC        DELTA TIME =  0.000 SEC
+
+
+
+0TOTAL COMPUTER TIME=   0.000 SEC        DELTA TIME =  0.000 SEC
+
+
+
+0TOTAL COMPUTER TIME=   0.000 SEC        DELTA TIME =  0.000 SEC
+
+0SINGULAR MATRIX, ITERATION  2  VARIABLE  5
+0SINGULAR MATRIX, ITERATION  4  VARIABLE  5
+0WARNING--POINT 15  USES A REDUCED SET OF COMPONENTS AND NO SPECIES USING THE ELIMINATED COMPONENT ARE CALCULATED.
+ ADD H2O(L)      
+0THE TEMPERATURE=  0.2981E+03 IS OUT OF RANGE FOR POINT   15
+
+
+0TOTAL COMPUTER TIME=   0.000 SEC        DELTA TIME =  0.000 SEC
+
+1INTERNAL COMBUSTION ENGINE MODEL ZMOTTO                                    CYCLE   2    LEVEL 2    CASE NO.     1359
+     REF:  ZELEZNIK, FRANK J.; AND MCBRIDE, BONNIE J.:  MODELING THE INTERNAL COMBUSTION ENGINE. NASA RP-1094, 1985.
+0COMPRESSION RATIO =  11.5     RPM = 9500.0     EGR = 0.000     T(EGR) =  298.1 K     SPARK ADVANCE =  40.00 DEG
+ FUEL PRESSURE = 1.00000 ATM     MANIFOLD PRESSURE = 4.75000 ATM     EXHAUST PRESSURE = 1.00000 ATM
+ PRESSURE DISCONTINUITIES ARE ISENTROPIC
+ BORE = 10.922 CM     STROKE = 10.312 CM     ROD = 17.145 CM     CHAMBER AREA =129.030 SQ CM     WALL TEMP =  360.0 K
+ TOTAL VOLUME = 1058.15 CC     DISPLACEMENT VOLUME =  966.13 CC
+0IVOPEN =   0.00 DEG     IVSHUT = 180.00 DEG                         EVOPEN = 540.00 DEG     EVSHUT = 720.00 DEG
+
+ EICHELBERG HEAT TRANSFER COEFICIENT
+0EQUILIBRIUM FLAME    FINITE BURNING INTERVAL = 99.4 DEG    COSINE  COMBUSTION    TAU =0.0000E+00 SEC    BETA =   0.000
+          AN =   0.500000  -0.500000
+0                                                                            WT FRACTION   ENERGY   STATE   TEMP
+          CHEMICAL FORMULA                                                                 CAL/MOL          DEG K
+ FUEL    C  1.00000   H  4.00000   O  1.00000                                   1.000000   -48064.793  G    298.15
+ AIR     N  1.56168   O  0.41959   AR 0.00936   C  0.00032                      1.000000      -29.791  G    298.15
+0                  A/F=  6.4731   PERCENT FUEL=  13.3813   EQUIVALENCE RATIO= 1.0000   PHI=   1.0000
+0                                      PERFORMANCE PARAMETERS FOR ONE CYLINDER
+0      MASS PER CYCLE (G)                 MEAN INTAKE MASS FLOW RATE (G/SEC)       MEAN EXHAUST MASS FLOW RATE (G/SEC)
+0     TOTAL        3.95124                      CHARGE      310.1737                      EXHAUST     310.1675
+      FUEL         0.52428                      FUEL         41.5054                      CO           0.45084
+      AIR          3.39371                      AIR         268.6684                      NOX          0.65807
+0   ENERGY PER CYCLE (JOULES)              AVERAGE ENERGY RATE - POWER (KW)                CYCLE EFFICIENCIES
+
+  INDICATED WORK       4467.054             INDICATED POWER       353.642                NET WORK      0.391120
+  INDICATED PUMP WORK   367.101             INDICATED PUMP POWER   29.062                HEAT LOSS     0.038582
+  HEAT LOSS             476.860             HEAT LOSS RATE         37.751                EXHAUST       0.382102
+  CHEM. ENERGY        12359.789             EXHAUST POWER         373.880
+0                                                    MISCELLANEOUS
+0                              INDICATED MEAN EFFECTIVE PRESSURE (ATM)            45.6318
+                               PUMP MEAN EFFECTIVE PRESSURE (ATM)                  3.7500
+                               MEAN TORQUE (NEWTON-METERS)                       384.6898
+0COMPOSITE EXHAUST GAS MOLE FRACTIONS AT  990.09 K  AND  1.0000 ATM      MOLECULAR WEIGHT =  27.618
+      AR       0.007735      CO       0.001433      CO2      0.114167      H        0.000004      H2       0.000701
+      H2O      0.229918      NO       0.001953      N2       0.643917      OH       0.000107      O2       0.000065
+0FRESH CHARGE MOLE FRACTIONS AT  448.48 K  AND  4.7500 ATM      MOLECULAR WEIGHT =  29.342
+      CH3OH    0.122538      AIR      0.877462
+0NOTE:  INTAKE AND EXHAUST VALUES CALCULATED WHEN THE VALVES CLOSE.
+0COMPUTER CYCLE TIME=   0.000 SEC
+1
+
+
+0TOTAL COMPUTER TIME=   0.000 SEC        DELTA TIME =  0.000 SEC
+
+0SINGULAR MATRIX, ITERATION  2  VARIABLE  5
+0SINGULAR MATRIX, ITERATION  4  VARIABLE  5
+0WARNING--POINT  3  USES A REDUCED SET OF COMPONENTS AND NO SPECIES USING THE ELIMINATED COMPONENT ARE CALCULATED.
+ ADD H2O(L)      
+0THE TEMPERATURE=  0.2981E+03 IS OUT OF RANGE FOR POINT    3
+
+
+0TOTAL COMPUTER TIME=   0.000 SEC        DELTA TIME =  0.000 SEC
+
+
+
+0TOTAL COMPUTER TIME=   0.000 SEC        DELTA TIME =  0.000 SEC
+
+
+
+0TOTAL COMPUTER TIME=   0.000 SEC        DELTA TIME =  0.000 SEC
+
+0SINGULAR MATRIX, ITERATION  2  VARIABLE  5
+0SINGULAR MATRIX, ITERATION  4  VARIABLE  5
+0WARNING--POINT 15  USES A REDUCED SET OF COMPONENTS AND NO SPECIES USING THE ELIMINATED COMPONENT ARE CALCULATED.
+ ADD H2O(L)      
+0THE TEMPERATURE=  0.2981E+03 IS OUT OF RANGE FOR POINT   15
+
+
+0TOTAL COMPUTER TIME=   0.000 SEC        DELTA TIME =  0.000 SEC
+
+1INTERNAL COMBUSTION ENGINE MODEL ZMOTTO                                    CYCLE   3    LEVEL 2    CASE NO.     1359
+     REF:  ZELEZNIK, FRANK J.; AND MCBRIDE, BONNIE J.:  MODELING THE INTERNAL COMBUSTION ENGINE. NASA RP-1094, 1985.
+0COMPRESSION RATIO =  11.5     RPM = 9500.0     EGR = 0.000     T(EGR) =  298.1 K     SPARK ADVANCE =  40.00 DEG
+ FUEL PRESSURE = 1.00000 ATM     MANIFOLD PRESSURE = 4.75000 ATM     EXHAUST PRESSURE = 1.00000 ATM
+ PRESSURE DISCONTINUITIES ARE ISENTROPIC
+ BORE = 10.922 CM     STROKE = 10.312 CM     ROD = 17.145 CM     CHAMBER AREA =129.030 SQ CM     WALL TEMP =  360.0 K
+ TOTAL VOLUME = 1058.15 CC     DISPLACEMENT VOLUME =  966.13 CC
+0IVOPEN =   0.00 DEG     IVSHUT = 180.00 DEG                         EVOPEN = 540.00 DEG     EVSHUT = 720.00 DEG
+
+ EICHELBERG HEAT TRANSFER COEFICIENT
+0EQUILIBRIUM FLAME    FINITE BURNING INTERVAL = 99.4 DEG    COSINE  COMBUSTION    TAU =0.0000E+00 SEC    BETA =   0.000
+          AN =   0.500000  -0.500000
+0                                                                            WT FRACTION   ENERGY   STATE   TEMP
+          CHEMICAL FORMULA                                                                 CAL/MOL          DEG K
+ FUEL    C  1.00000   H  4.00000   O  1.00000                                   1.000000   -48064.793  G    298.15
+ AIR     N  1.56168   O  0.41959   AR 0.00936   C  0.00032                      1.000000      -29.791  G    298.15
+0                  A/F=  6.4731   PERCENT FUEL=  13.3813   EQUIVALENCE RATIO= 1.0000   PHI=   1.0000
+0                                      PERFORMANCE PARAMETERS FOR ONE CYLINDER
+0      MASS PER CYCLE (G)                 MEAN INTAKE MASS FLOW RATE (G/SEC)       MEAN EXHAUST MASS FLOW RATE (G/SEC)
+0     TOTAL        3.95146                      CHARGE      310.1848                      EXHAUST     310.1848
+      FUEL         0.52430                      FUEL         41.5068                      CO           0.45077
+      AIR          3.39383                      AIR         268.6780                      NOX          0.65799
+0   ENERGY PER CYCLE (JOULES)              AVERAGE ENERGY RATE - POWER (KW)                CYCLE EFFICIENCIES
+
+  INDICATED WORK       4467.253             INDICATED POWER       353.658                NET WORK      0.391121
+  INDICATED PUMP WORK   367.101             INDICATED PUMP POWER   29.062                HEAT LOSS     0.038579
+  HEAT LOSS             476.843             HEAT LOSS RATE         37.750                EXHAUST       0.382094
+  CHEM. ENERGY        12360.247             EXHAUST POWER         373.886
+0                                                    MISCELLANEOUS
+0                              INDICATED MEAN EFFECTIVE PRESSURE (ATM)            45.6338
+                               PUMP MEAN EFFECTIVE PRESSURE (ATM)                  3.7500
+                               MEAN TORQUE (NEWTON-METERS)                       384.7057
+0COMPOSITE EXHAUST GAS MOLE FRACTIONS AT  990.05 K  AND  1.0000 ATM      MOLECULAR WEIGHT =  27.618
+      AR       0.007735      CO       0.001433      CO2      0.114168      H        0.000004      H2       0.000701
+      H2O      0.229918      NO       0.001952      N2       0.643918      OH       0.000107      O2       0.000065
+0FRESH CHARGE MOLE FRACTIONS AT  448.48 K  AND  4.7500 ATM      MOLECULAR WEIGHT =  29.342
+      CH3OH    0.122538      AIR      0.877462
+0NOTE:  INTAKE AND EXHAUST VALUES CALCULATED WHEN THE VALVES CLOSE.
+0COMPUTER CYCLE TIME=   0.000 SEC
+1
+
+
+0TOTAL COMPUTER TIME=   0.000 SEC        DELTA TIME =  0.000 SEC
+
+0SINGULAR MATRIX, ITERATION  2  VARIABLE  5
+0SINGULAR MATRIX, ITERATION  4  VARIABLE  5
+0WARNING--POINT  3  USES A REDUCED SET OF COMPONENTS AND NO SPECIES USING THE ELIMINATED COMPONENT ARE CALCULATED.
+ ADD H2O(L)      
+0THE TEMPERATURE=  0.2981E+03 IS OUT OF RANGE FOR POINT    3
+
+
+0TOTAL COMPUTER TIME=   0.000 SEC        DELTA TIME =  0.000 SEC
+
+
+
+0TOTAL COMPUTER TIME=   0.000 SEC        DELTA TIME =  0.000 SEC
+
+
+
+0TOTAL COMPUTER TIME=   0.000 SEC        DELTA TIME =  0.000 SEC
+
+0SINGULAR MATRIX, ITERATION  2  VARIABLE  5
+0SINGULAR MATRIX, ITERATION  4  VARIABLE  5
+0WARNING--POINT 15  USES A REDUCED SET OF COMPONENTS AND NO SPECIES USING THE ELIMINATED COMPONENT ARE CALCULATED.
+ ADD H2O(L)      
+0THE TEMPERATURE=  0.2981E+03 IS OUT OF RANGE FOR POINT   15
+
+
+0TOTAL COMPUTER TIME=   0.000 SEC        DELTA TIME =  0.000 SEC
+
+1INTERNAL COMBUSTION ENGINE MODEL ZMOTTO                                    CYCLE   4    LEVEL 3    CASE NO.     1359
+     REF:  ZELEZNIK, FRANK J.; AND MCBRIDE, BONNIE J.:  MODELING THE INTERNAL COMBUSTION ENGINE. NASA RP-1094, 1985.
+0COMPRESSION RATIO =  11.5     RPM = 9500.0     EGR = 0.000     T(EGR) =  298.1 K     SPARK ADVANCE =  40.00 DEG
+ FUEL PRESSURE = 1.00000 ATM     MANIFOLD PRESSURE = 4.75000 ATM     EXHAUST PRESSURE = 1.00000 ATM
+ PRESSURE DISCONTINUITIES ARE ISENTROPIC
+ BORE = 10.922 CM     STROKE = 10.312 CM     ROD = 17.145 CM     CHAMBER AREA =129.030 SQ CM     WALL TEMP =  360.0 K
+ TOTAL VOLUME = 1058.15 CC     DISPLACEMENT VOLUME =  966.13 CC
+0IVOPEN =   0.00 DEG     IVSHUT = 180.00 DEG                         EVOPEN = 540.00 DEG     EVSHUT = 720.00 DEG
+
+ EICHELBERG HEAT TRANSFER COEFICIENT
+0EQUILIBRIUM FLAME    FINITE BURNING INTERVAL = 99.4 DEG    COSINE  COMBUSTION    TAU =0.0000E+00 SEC    BETA =   0.000
+          AN =   0.500000  -0.500000
+0                                                                            WT FRACTION   ENERGY   STATE   TEMP
+          CHEMICAL FORMULA                                                                 CAL/MOL          DEG K
+ FUEL    C  1.00000   H  4.00000   O  1.00000                                   1.000000   -48064.793  G    298.15
+ AIR     N  1.56168   O  0.41959   AR 0.00936   C  0.00032                      1.000000      -29.791  G    298.15
+0                  A/F=  6.4731   PERCENT FUEL=  13.3813   EQUIVALENCE RATIO= 1.0000   PHI=   1.0000
+0                                      PERFORMANCE PARAMETERS FOR ONE CYLINDER
+0      MASS PER CYCLE (G)                 MEAN INTAKE MASS FLOW RATE (G/SEC)       MEAN EXHAUST MASS FLOW RATE (G/SEC)
+0     TOTAL        3.95146                      CHARGE      310.1850                      EXHAUST     310.1710
+      FUEL         0.52430                      FUEL         41.5069                      CO           0.79242
+      AIR          3.39383                      AIR         268.6782                      NOX          1.23202
+0   ENERGY PER CYCLE (JOULES)              AVERAGE ENERGY RATE - POWER (KW)                CYCLE EFFICIENCIES
+
+  INDICATED WORK       4451.316             INDICATED POWER       352.396                NET WORK      0.389832
+  INDICATED PUMP WORK   367.101             INDICATED PUMP POWER   29.062                HEAT LOSS     0.038052
+  HEAT LOSS             470.326             HEAT LOSS RATE         37.234                EXHAUST       0.386043
+  CHEM. ENERGY        12360.254             EXHAUST POWER         377.751
+0                                                    MISCELLANEOUS
+0                              INDICATED MEAN EFFECTIVE PRESSURE (ATM)            45.4710
+                               PUMP MEAN EFFECTIVE PRESSURE (ATM)                  3.7500
+                               MEAN TORQUE (NEWTON-METERS)                       383.4374
+0COMPOSITE EXHAUST GAS MOLE FRACTIONS AT  983.31 K  AND  1.0000 ATM      MOLECULAR WEIGHT =  27.595
+      AR       0.007728      CO       0.002517      CO2      0.112991      H        0.000006      H2       0.001246
+      H2O      0.229197      NO       0.003652      N2       0.642542      N2O      0.000003      OH       0.000083
+      O2       0.000034
+0FRESH CHARGE MOLE FRACTIONS AT  448.48 K  AND  4.7500 ATM      MOLECULAR WEIGHT =  29.342
+      CH3OH    0.122538      AIR      0.877462
+0NOTE:  INTAKE AND EXHAUST VALUES CALCULATED WHEN THE VALVES CLOSE.
+0COMPUTER CYCLE TIME=   0.000 SEC
+1
+
+
+0TOTAL COMPUTER TIME=   0.000 SEC        DELTA TIME =  0.000 SEC
+
+0SINGULAR MATRIX, ITERATION  2  VARIABLE  5
+0SINGULAR MATRIX, ITERATION  4  VARIABLE  5
+0WARNING--POINT  3  USES A REDUCED SET OF COMPONENTS AND NO SPECIES USING THE ELIMINATED COMPONENT ARE CALCULATED.
+ ADD H2O(L)      
+0THE TEMPERATURE=  0.2981E+03 IS OUT OF RANGE FOR POINT    3
+
+
+0TOTAL COMPUTER TIME=   0.000 SEC        DELTA TIME =  0.000 SEC
+
+
+
+0TOTAL COMPUTER TIME=   0.000 SEC        DELTA TIME =  0.000 SEC
+
+
+
+0TOTAL COMPUTER TIME=   0.000 SEC        DELTA TIME =  0.000 SEC
+
+0SINGULAR MATRIX, ITERATION  2  VARIABLE  5
+0SINGULAR MATRIX, ITERATION  4  VARIABLE  5
+0WARNING--POINT 15  USES A REDUCED SET OF COMPONENTS AND NO SPECIES USING THE ELIMINATED COMPONENT ARE CALCULATED.
+ ADD H2O(L)      
+0THE TEMPERATURE=  0.2981E+03 IS OUT OF RANGE FOR POINT   15
+
+
+0TOTAL COMPUTER TIME=   0.000 SEC        DELTA TIME =  0.000 SEC
+
+1INTERNAL COMBUSTION ENGINE MODEL ZMOTTO                                    CYCLE   5    LEVEL 3    CASE NO.     1359
+     REF:  ZELEZNIK, FRANK J.; AND MCBRIDE, BONNIE J.:  MODELING THE INTERNAL COMBUSTION ENGINE. NASA RP-1094, 1985.
+0COMPRESSION RATIO =  11.5     RPM = 9500.0     EGR = 0.000     T(EGR) =  298.1 K     SPARK ADVANCE =  40.00 DEG
+ FUEL PRESSURE = 1.00000 ATM     MANIFOLD PRESSURE = 4.75000 ATM     EXHAUST PRESSURE = 1.00000 ATM
+ PRESSURE DISCONTINUITIES ARE ISENTROPIC
+ BORE = 10.922 CM     STROKE = 10.312 CM     ROD = 17.145 CM     CHAMBER AREA =129.030 SQ CM     WALL TEMP =  360.0 K
+ TOTAL VOLUME = 1058.15 CC     DISPLACEMENT VOLUME =  966.13 CC
+0IVOPEN =   0.00 DEG     IVSHUT = 180.00 DEG                         EVOPEN = 540.00 DEG     EVSHUT = 720.00 DEG
+
+ EICHELBERG HEAT TRANSFER COEFICIENT
+0EQUILIBRIUM FLAME    FINITE BURNING INTERVAL = 99.4 DEG    COSINE  COMBUSTION    TAU =0.0000E+00 SEC    BETA =   0.000
+          AN =   0.500000  -0.500000
+0                                                                            WT FRACTION   ENERGY   STATE   TEMP
+          CHEMICAL FORMULA                                                                 CAL/MOL          DEG K
+ FUEL    C  1.00000   H  4.00000   O  1.00000                                   1.000000   -48064.793  G    298.15
+ AIR     N  1.56168   O  0.41959   AR 0.00936   C  0.00032                      1.000000      -29.791  G    298.15
+0                  A/F=  6.4731   PERCENT FUEL=  13.3813   EQUIVALENCE RATIO= 1.0000   PHI=   1.0000
+0                                      PERFORMANCE PARAMETERS FOR ONE CYLINDER
+0      MASS PER CYCLE (G)                 MEAN INTAKE MASS FLOW RATE (G/SEC)       MEAN EXHAUST MASS FLOW RATE (G/SEC)
+0     TOTAL        3.95198                      CHARGE      310.2118                      EXHAUST     310.2162
+      FUEL         0.52434                      FUEL         41.5105                      CO           0.79456
+      AIR          3.39412                      AIR         268.7014                      NOX          1.23235
+0   ENERGY PER CYCLE (JOULES)              AVERAGE ENERGY RATE - POWER (KW)                CYCLE EFFICIENCIES
+
+  INDICATED WORK       4452.335             INDICATED POWER       352.477                NET WORK      0.389856
+  INDICATED PUMP WORK   367.101             INDICATED PUMP POWER   29.062                HEAT LOSS     0.038061
+  HEAT LOSS             470.517             HEAT LOSS RATE         37.249                EXHAUST       0.386839
+  CHEM. ENERGY        12362.102             EXHAUST POWER         378.586
+0                                                    MISCELLANEOUS
+0                              INDICATED MEAN EFFECTIVE PRESSURE (ATM)            45.4814
+                               PUMP MEAN EFFECTIVE PRESSURE (ATM)                  3.7500
+                               MEAN TORQUE (NEWTON-METERS)                       383.5185
+0COMPOSITE EXHAUST GAS MOLE FRACTIONS AT  985.14 K  AND  1.0000 ATM      MOLECULAR WEIGHT =  27.595
+      AR       0.007728      CO       0.002523      CO2      0.112984      H        0.000006      H2       0.001245
+      H2O      0.229196      NO       0.003653      N2       0.642540      N2O      0.000003      OH       0.000085
+      O2       0.000036
+0FRESH CHARGE MOLE FRACTIONS AT  448.48 K  AND  4.7500 ATM      MOLECULAR WEIGHT =  29.342
+      CH3OH    0.122538      AIR      0.877462
+0NOTE:  INTAKE AND EXHAUST VALUES CALCULATED WHEN THE VALVES CLOSE.
+0COMPUTER CYCLE TIME=   0.000 SEC
+1
+
+
+0TOTAL COMPUTER TIME=   0.000 SEC        DELTA TIME =  0.000 SEC
+
+0SINGULAR MATRIX, ITERATION  2  VARIABLE  5
+0SINGULAR MATRIX, ITERATION  4  VARIABLE  5
+0WARNING--POINT  3  USES A REDUCED SET OF COMPONENTS AND NO SPECIES USING THE ELIMINATED COMPONENT ARE CALCULATED.
+ ADD H2O(L)      
+0THE TEMPERATURE=  0.2981E+03 IS OUT OF RANGE FOR POINT    3
+
+
+0TOTAL COMPUTER TIME=   0.000 SEC        DELTA TIME =  0.000 SEC
+
+
+
+0TOTAL COMPUTER TIME=   0.000 SEC        DELTA TIME =  0.000 SEC
+
+
+
+0TOTAL COMPUTER TIME=   0.000 SEC        DELTA TIME =  0.000 SEC
+
+0SINGULAR MATRIX, ITERATION  2  VARIABLE  5
+0SINGULAR MATRIX, ITERATION  4  VARIABLE  5
+0WARNING--POINT 15  USES A REDUCED SET OF COMPONENTS AND NO SPECIES USING THE ELIMINATED COMPONENT ARE CALCULATED.
+ ADD H2O(L)      
+0THE TEMPERATURE=  0.2981E+03 IS OUT OF RANGE FOR POINT   15
+
+
+0TOTAL COMPUTER TIME=   0.000 SEC        DELTA TIME =  0.000 SEC
+
+1INTERNAL COMBUSTION ENGINE MODEL ZMOTTO                                    CYCLE   6    LEVEL 3    CASE NO.     1359
+     REF:  ZELEZNIK, FRANK J.; AND MCBRIDE, BONNIE J.:  MODELING THE INTERNAL COMBUSTION ENGINE. NASA RP-1094, 1985.
+0COMPRESSION RATIO =  11.5     RPM = 9500.0     EGR = 0.000     T(EGR) =  298.1 K     SPARK ADVANCE =  40.00 DEG
+ FUEL PRESSURE = 1.00000 ATM     MANIFOLD PRESSURE = 4.75000 ATM     EXHAUST PRESSURE = 1.00000 ATM
+ PRESSURE DISCONTINUITIES ARE ISENTROPIC
+ BORE = 10.922 CM     STROKE = 10.312 CM     ROD = 17.145 CM     CHAMBER AREA =129.030 SQ CM     WALL TEMP =  360.0 K
+ TOTAL VOLUME = 1058.15 CC     DISPLACEMENT VOLUME =  966.13 CC
+0IVOPEN =   0.00 DEG     IVSHUT = 180.00 DEG                         EVOPEN = 540.00 DEG     EVSHUT = 720.00 DEG
+
+ EICHELBERG HEAT TRANSFER COEFICIENT
+0EQUILIBRIUM FLAME    FINITE BURNING INTERVAL = 99.4 DEG    COSINE  COMBUSTION    TAU =0.0000E+00 SEC    BETA =   0.000
+          AN =   0.500000  -0.500000
+0                                                                            WT FRACTION   ENERGY   STATE   TEMP
+          CHEMICAL FORMULA                                                                 CAL/MOL          DEG K
+ FUEL    C  1.00000   H  4.00000   O  1.00000                                   1.000000   -48064.793  G    298.15
+ AIR     N  1.56168   O  0.41959   AR 0.00936   C  0.00032                      1.000000      -29.791  G    298.15
+0                  A/F=  6.4731   PERCENT FUEL=  13.3813   EQUIVALENCE RATIO= 1.0000   PHI=   1.0000
+0                                      PERFORMANCE PARAMETERS FOR ONE CYLINDER
+0      MASS PER CYCLE (G)                 MEAN INTAKE MASS FLOW RATE (G/SEC)       MEAN EXHAUST MASS FLOW RATE (G/SEC)
+0     TOTAL        3.95182                      CHARGE      310.2041                      EXHAUST     310.1999
+      FUEL         0.52433                      FUEL         41.5094                      CO           0.79325
+      AIR          3.39404                      AIR         268.6947                      NOX          1.23264
+0   ENERGY PER CYCLE (JOULES)              AVERAGE ENERGY RATE - POWER (KW)                CYCLE EFFICIENCIES
+
+  INDICATED WORK       4452.804             INDICATED POWER       352.514                NET WORK      0.389904
+  INDICATED PUMP WORK   367.101             INDICATED PUMP POWER   29.062                HEAT LOSS     0.038051
+  HEAT LOSS             470.375             HEAT LOSS RATE         37.238                EXHAUST       0.386075
+  CHEM. ENERGY        12361.776             EXHAUST POWER         377.829
+0                                                    MISCELLANEOUS
+0                              INDICATED MEAN EFFECTIVE PRESSURE (ATM)            45.4862
+                               PUMP MEAN EFFECTIVE PRESSURE (ATM)                  3.7500
+                               MEAN TORQUE (NEWTON-METERS)                       383.5558
+0COMPOSITE EXHAUST GAS MOLE FRACTIONS AT  983.39 K  AND  1.0000 ATM      MOLECULAR WEIGHT =  27.595
+      AR       0.007728      CO       0.002519      CO2      0.112988      H        0.000006      H2       0.001247
+      H2O      0.229196      NO       0.003654      N2       0.642540      N2O      0.000003      OH       0.000083
+      O2       0.000035
+0FRESH CHARGE MOLE FRACTIONS AT  448.48 K  AND  4.7500 ATM      MOLECULAR WEIGHT =  29.342
+      CH3OH    0.122538      AIR      0.877462
+0NOTE:  INTAKE AND EXHAUST VALUES CALCULATED WHEN THE VALVES CLOSE.
+0COMPUTER CYCLE TIME=   0.000 SEC
+1
+0INTAKE VALVE OPENS  -  A/F =  6.4731
+
+
+0TOTAL COMPUTER TIME=   0.000 SEC        DELTA TIME =  0.000 SEC
+
+0INTAKE VALVE CLOSES
+0SINGULAR MATRIX, ITERATION  2  VARIABLE  5
+0SINGULAR MATRIX, ITERATION  4  VARIABLE  5
+0WARNING--POINT  3  USES A REDUCED SET OF COMPONENTS AND NO SPECIES USING THE ELIMINATED COMPONENT ARE CALCULATED.
+ ADD H2O(L)      
+0THE TEMPERATURE=  0.2981E+03 IS OUT OF RANGE FOR POINT    3
+
+
+0TOTAL COMPUTER TIME=   0.000 SEC        DELTA TIME =  0.000 SEC
+
+
+
+0TOTAL COMPUTER TIME=   0.000 SEC        DELTA TIME =  0.000 SEC
+
+
+
+0TOTAL COMPUTER TIME=   0.000 SEC        DELTA TIME =  0.000 SEC
+
+0EXHAUST VALVE OPENS
+
+
+0TOTAL COMPUTER TIME=   0.000 SEC        DELTA TIME =  0.000 SEC
+
+0INTAKE VALVE OPENS  -  A/F =  6.4731
+
+
+0TOTAL COMPUTER TIME=   0.000 SEC        DELTA TIME =  0.000 SEC
+
+1INTERNAL COMBUSTION ENGINE MODEL ZMOTTO                                    CYCLE   7    LEVEL 4    CASE NO.     1359
+     REF:  ZELEZNIK, FRANK J.; AND MCBRIDE, BONNIE J.:  MODELING THE INTERNAL COMBUSTION ENGINE. NASA RP-1094, 1985.
+0COMPRESSION RATIO =  11.5     RPM = 9500.0     EGR = 0.000     T(EGR) =  298.1 K     SPARK ADVANCE =  40.00 DEG
+ FUEL PRESSURE = 1.00000 ATM     MANIFOLD PRESSURE = 4.75000 ATM     EXHAUST PRESSURE = 1.00000 ATM
+ FLOWS ARE ISENTROPIC
+ BORE = 10.922 CM     STROKE = 10.312 CM     ROD = 17.145 CM     CHAMBER AREA =129.030 SQ CM     WALL TEMP =  360.0 K
+ TOTAL VOLUME = 1058.15 CC     DISPLACEMENT VOLUME =  966.13 CC
+0IVOPEN = 699.00 DEG     IVSHUT = 265.00 DEG                         EVOPEN = 465.00 DEG     EVSHUT =  45.00 DEG
+
+ EICHELBERG HEAT TRANSFER COEFICIENT
+0EQUILIBRIUM FLAME    FINITE BURNING INTERVAL = 99.4 DEG    COSINE  COMBUSTION    TAU =0.0000E+00 SEC    BETA =   0.000
+          AN =   0.500000  -0.500000
+0                                                                            WT FRACTION   ENERGY   STATE   TEMP
+          CHEMICAL FORMULA                                                                 CAL/MOL          DEG K
+ FUEL    C  1.00000   H  4.00000   O  1.00000                                   1.000000   -48064.793  G    298.15
+ AIR     N  1.56168   O  0.41959   AR 0.00936   C  0.00032                      1.000000      -29.791  G    298.15
+0                  A/F=  6.4731   PERCENT FUEL=  13.3813   EQUIVALENCE RATIO= 1.0000   PHI=   1.0000
+0                                      PERFORMANCE PARAMETERS FOR ONE CYLINDER
+0      MASS PER CYCLE (G)                 MEAN INTAKE MASS FLOW RATE (G/SEC)       MEAN EXHAUST MASS FLOW RATE (G/SEC)
+0     TOTAL        1.36027                      CHARGE      104.9904                      EXHAUST     310.1999
+      FUEL         0.17752                      FUEL         14.0491                      CO           0.79325
+      AIR          1.14913                      AIR          90.9413                      NOX          1.23264
+                                                NET         104.9903                      NET         310.1999
+0   ENERGY PER CYCLE (JOULES)              AVERAGE ENERGY RATE - POWER (KW)                CYCLE EFFICIENCIES
+
+  INDICATED WORK       1520.434             INDICATED POWER       120.368                NET WORK      0.275153
+  INDICATED PUMP WORK  -366.503             INDICATED PUMP POWER  -29.015                HEAT LOSS     0.070159
+  HEAT LOSS             294.229             HEAT LOSS RATE         23.293                EXHAUST       1.138014
+  CHEM. ENERGY         4193.778             EXHAUST POWER         377.829
+0                                                    MISCELLANEOUS
+0                              INDICATED MEAN EFFECTIVE PRESSURE (ATM)            15.5315
+                               PUMP MEAN EFFECTIVE PRESSURE (ATM)                 -3.7439
+                               MEAN TORQUE (NEWTON-METERS)                        91.8269
+0COMPOSITE EXHAUST GAS MOLE FRACTIONS AT  983.39 K  AND  1.0000 ATM      MOLECULAR WEIGHT =  27.595
+      AR       0.007728      CO       0.002519      CO2      0.112988      H        0.000006      H2       0.001247
+      H2O      0.229196      NO       0.003654      N2       0.642540      N2O      0.000003      OH       0.000083
+      O2       0.000035
+0FRESH CHARGE MOLE FRACTIONS AT  448.48 K  AND  4.7500 ATM      MOLECULAR WEIGHT =  29.342
+      CH3OH    0.122538      AIR      0.877462
+0NOTE:  INTAKE AND EXHAUST VALUES CALCULATED WHEN THE VALVES CLOSE.
+0COMPUTER CYCLE TIME=   0.000 SEC
+1EXHAUST GAS PROPERTIES AVERAGED FOR   1 CYCLES
+0     NET EXHAUST FLOW RATE (G/SEC) = 310.1999
+0     MOLECULAR WEIGHT =  27.5954
+0     ENTHALPY (J/G) =  -2777.16
+0     MASS AVERAGED COMPOSITION (MOLE FRACTIONS)
+          AR           0.007728
+          CO           0.002519
+          CO2          0.112988
+          H            0.000006
+          H2           0.001247
+          H2O          0.229196
+          NO           0.003654
+          N2           0.642540
+          N2O          0.000003
+          OH           0.000083
+          O2           0.000035
+1
+
+
+0TOTAL COMPUTER TIME=   0.000 SEC        DELTA TIME =  0.000 SEC
+
+0EXHAUST VALVE CLOSES
+0SINGULAR MATRIX, ITERATION  2  VARIABLE  5
+0SINGULAR MATRIX, ITERATION  4  VARIABLE  5
+0WARNING--POINT 15  USES A REDUCED SET OF COMPONENTS AND NO SPECIES USING THE ELIMINATED COMPONENT ARE CALCULATED.
+ ADD H2O(L)      
+0THE TEMPERATURE=  0.2981E+03 IS OUT OF RANGE FOR POINT   15
+
+
+0TOTAL COMPUTER TIME=   0.000 SEC        DELTA TIME =  0.000 SEC
+
+0INTAKE VALVE CLOSES
+0SINGULAR MATRIX, ITERATION  2  VARIABLE  5
+0SINGULAR MATRIX, ITERATION  4  VARIABLE  5
+0WARNING--POINT  4  USES A REDUCED SET OF COMPONENTS AND NO SPECIES USING THE ELIMINATED COMPONENT ARE CALCULATED.
+ ADD H2O(L)      
+0THE TEMPERATURE=  0.2981E+03 IS OUT OF RANGE FOR POINT    4
+
+
+0TOTAL COMPUTER TIME=   0.000 SEC        DELTA TIME =  0.000 SEC
+
+
+
+0TOTAL COMPUTER TIME=   0.000 SEC        DELTA TIME =  0.000 SEC
+
+
+
+0TOTAL COMPUTER TIME=   0.000 SEC        DELTA TIME =  0.000 SEC
+
+0EXHAUST VALVE OPENS
+
+
+0TOTAL COMPUTER TIME=   0.000 SEC        DELTA TIME =  0.000 SEC
+
+0INTAKE VALVE OPENS  -  A/F =  6.4731
+
+
+0TOTAL COMPUTER TIME=   0.000 SEC        DELTA TIME =  0.000 SEC
+
+1INTERNAL COMBUSTION ENGINE MODEL ZMOTTO                                    CYCLE   8    LEVEL 4    CASE NO.     1359
+     REF:  ZELEZNIK, FRANK J.; AND MCBRIDE, BONNIE J.:  MODELING THE INTERNAL COMBUSTION ENGINE. NASA RP-1094, 1985.
+0COMPRESSION RATIO =  11.5     RPM = 9500.0     EGR = 0.000     T(EGR) =  298.1 K     SPARK ADVANCE =  40.00 DEG
+ FUEL PRESSURE = 1.00000 ATM     MANIFOLD PRESSURE = 4.75000 ATM     EXHAUST PRESSURE = 1.00000 ATM
+ FLOWS ARE ISENTROPIC
+ BORE = 10.922 CM     STROKE = 10.312 CM     ROD = 17.145 CM     CHAMBER AREA =129.030 SQ CM     WALL TEMP =  360.0 K
+ TOTAL VOLUME = 1058.15 CC     DISPLACEMENT VOLUME =  966.13 CC
+0IVOPEN = 699.00 DEG     IVSHUT = 265.00 DEG                         EVOPEN = 465.00 DEG     EVSHUT =  45.00 DEG
+
+ EICHELBERG HEAT TRANSFER COEFICIENT
+0EQUILIBRIUM FLAME    FINITE BURNING INTERVAL = 99.4 DEG    COSINE  COMBUSTION    TAU =0.0000E+00 SEC    BETA =   0.000
+          AN =   0.500000  -0.500000
+0                                                                            WT FRACTION   ENERGY   STATE   TEMP
+          CHEMICAL FORMULA                                                                 CAL/MOL          DEG K
+ FUEL    C  1.00000   H  4.00000   O  1.00000                                   1.000000   -48064.793  G    298.15
+ AIR     N  1.56168   O  0.41959   AR 0.00936   C  0.00032                      1.000000      -29.791  G    298.15
+0                  A/F=  6.4731   PERCENT FUEL=  13.3813   EQUIVALENCE RATIO= 1.0000   PHI=   1.0000
+0                                      PERFORMANCE PARAMETERS FOR ONE CYLINDER
+0      MASS PER CYCLE (G)                 MEAN INTAKE MASS FLOW RATE (G/SEC)       MEAN EXHAUST MASS FLOW RATE (G/SEC)
+0     TOTAL        1.37201                      CHARGE       99.0402                      EXHAUST      98.3344
+      FUEL         0.16737                      FUEL         13.2529                      CO           0.23727
+      AIR          1.08338                      AIR          85.7874                      NOX          0.40365
+                                                NET          99.0402                      NET          98.3344
+0   ENERGY PER CYCLE (JOULES)              AVERAGE ENERGY RATE - POWER (KW)                CYCLE EFFICIENCIES
+
+  INDICATED WORK       1423.365             INDICATED POWER       112.683                NET WORK      0.285062
+  INDICATED PUMP WORK  -286.618             INDICATED PUMP POWER  -22.691                HEAT LOSS     0.076029
+  HEAT LOSS             303.180             HEAT LOSS RATE         24.002                EXHAUST       0.443855
+  CHEM. ENERGY         3987.719             EXHAUST POWER         140.123
+0                                                    MISCELLANEOUS
+0                              INDICATED MEAN EFFECTIVE PRESSURE (ATM)            14.5399
+                               PUMP MEAN EFFECTIVE PRESSURE (ATM)                 -2.9279
+                               MEAN TORQUE (NEWTON-METERS)                        90.4595
+0COMPOSITE EXHAUST GAS MOLE FRACTIONS AT 1134.89 K  AND  1.0000 ATM      MOLECULAR WEIGHT =  27.593
+      AR       0.007726      CO       0.002377      CO2      0.113093      H        0.000010      H2       0.001550
+      H2O      0.228827      NO       0.003774      N2       0.642274      N2O      0.000001      OH       0.000061
+      O2       0.000063      CH3OH    0.000040      AIR      0.000203
+0FRESH CHARGE MOLE FRACTIONS AT  448.48 K  AND  4.7500 ATM      MOLECULAR WEIGHT =  29.342
+      CH3OH    0.122538      AIR      0.877462
+0NOTE:  INTAKE AND EXHAUST VALUES CALCULATED WHEN THE VALVES CLOSE.
+0COMPUTER CYCLE TIME=   0.000 SEC
+1EXHAUST GAS PROPERTIES AVERAGED FOR   2 CYCLES
+0     NET EXHAUST FLOW RATE (G/SEC) = 204.2671
+0     MOLECULAR WEIGHT =  27.5949
+0     ENTHALPY (J/G) =  -2727.11
+0     MASS AVERAGED COMPOSITION (MOLE FRACTIONS)
+          AR           0.007728
+          CO           0.002485
+          CO2          0.113013
+          H            0.000007
+          H2           0.001320
+          H2O          0.229107
+          NO           0.003683
+          N2           0.642476
+          N2O          0.000003
+          OH           0.000078
+          O2           0.000042
+          CH3OH        0.000010
+          AIR          0.000049
+1
+
+
+0TOTAL COMPUTER TIME=   0.000 SEC        DELTA TIME =  0.000 SEC
+
+0EXHAUST VALVE CLOSES
+0SINGULAR MATRIX, ITERATION  2  VARIABLE  5
+0SINGULAR MATRIX, ITERATION  4  VARIABLE  5
+0WARNING--POINT 15  USES A REDUCED SET OF COMPONENTS AND NO SPECIES USING THE ELIMINATED COMPONENT ARE CALCULATED.
+ ADD H2O(L)      
+0THE TEMPERATURE=  0.2981E+03 IS OUT OF RANGE FOR POINT   15
+
+
+0TOTAL COMPUTER TIME=   0.000 SEC        DELTA TIME =  0.000 SEC
+
+0INTAKE VALVE CLOSES
+0SINGULAR MATRIX, ITERATION  2  VARIABLE  5
+0SINGULAR MATRIX, ITERATION  4  VARIABLE  5
+0WARNING--POINT 13  USES A REDUCED SET OF COMPONENTS AND NO SPECIES USING THE ELIMINATED COMPONENT ARE CALCULATED.
+ ADD H2O(L)      
+0THE TEMPERATURE=  0.2981E+03 IS OUT OF RANGE FOR POINT   13
+
+
+0TOTAL COMPUTER TIME=   0.000 SEC        DELTA TIME =  0.000 SEC
+
+
+
+0TOTAL COMPUTER TIME=   0.000 SEC        DELTA TIME =  0.000 SEC
+
+
+
+0TOTAL COMPUTER TIME=   0.000 SEC        DELTA TIME =  0.000 SEC
+
+0EXHAUST VALVE OPENS
+
+
+0TOTAL COMPUTER TIME=   0.000 SEC        DELTA TIME =  0.000 SEC
+
+0INTAKE VALVE OPENS  -  A/F =  6.4731
+
+
+0TOTAL COMPUTER TIME=   0.000 SEC        DELTA TIME =  0.000 SEC
+
+1INTERNAL COMBUSTION ENGINE MODEL ZMOTTO                                    CYCLE   9    LEVEL 4    CASE NO.     1359
+     REF:  ZELEZNIK, FRANK J.; AND MCBRIDE, BONNIE J.:  MODELING THE INTERNAL COMBUSTION ENGINE. NASA RP-1094, 1985.
+0COMPRESSION RATIO =  11.5     RPM = 9500.0     EGR = 0.000     T(EGR) =  298.1 K     SPARK ADVANCE =  40.00 DEG
+ FUEL PRESSURE = 1.00000 ATM     MANIFOLD PRESSURE = 4.75000 ATM     EXHAUST PRESSURE = 1.00000 ATM
+ FLOWS ARE ISENTROPIC
+ BORE = 10.922 CM     STROKE = 10.312 CM     ROD = 17.145 CM     CHAMBER AREA =129.030 SQ CM     WALL TEMP =  360.0 K
+ TOTAL VOLUME = 1058.15 CC     DISPLACEMENT VOLUME =  966.13 CC
+0IVOPEN = 699.00 DEG     IVSHUT = 265.00 DEG                         EVOPEN = 465.00 DEG     EVSHUT =  45.00 DEG
+
+ EICHELBERG HEAT TRANSFER COEFICIENT
+0EQUILIBRIUM FLAME    FINITE BURNING INTERVAL = 99.4 DEG    COSINE  COMBUSTION    TAU =0.0000E+00 SEC    BETA =   0.000
+          AN =   0.500000  -0.500000
+0                                                                            WT FRACTION   ENERGY   STATE   TEMP
+          CHEMICAL FORMULA                                                                 CAL/MOL          DEG K
+ FUEL    C  1.00000   H  4.00000   O  1.00000                                   1.000000   -48064.793  G    298.15
+ AIR     N  1.56168   O  0.41959   AR 0.00936   C  0.00032                      1.000000      -29.791  G    298.15
+0                  A/F=  6.4731   PERCENT FUEL=  13.3813   EQUIVALENCE RATIO= 1.0000   PHI=   1.0000
+0                                      PERFORMANCE PARAMETERS FOR ONE CYLINDER
+0      MASS PER CYCLE (G)                 MEAN INTAKE MASS FLOW RATE (G/SEC)       MEAN EXHAUST MASS FLOW RATE (G/SEC)
+0     TOTAL        1.37238                      CHARGE       98.8412                      EXHAUST      99.0594
+      FUEL         0.16710                      FUEL         13.2263                      CO           0.22913
+      AIR          1.08166                      AIR          85.6149                      NOX          0.39250
+                                                NET          98.8412                      NET          99.0594
+0   ENERGY PER CYCLE (JOULES)              AVERAGE ENERGY RATE - POWER (KW)                CYCLE EFFICIENCIES
+
+  INDICATED WORK       1420.516             INDICATED POWER       112.457                NET WORK      0.285207
+  INDICATED PUMP WORK  -284.784             INDICATED PUMP POWER  -22.545                HEAT LOSS     0.075883
+  HEAT LOSS             302.176             HEAT LOSS RATE         23.922                EXHAUST       0.441118
+  CHEM. ENERGY         3982.128             EXHAUST POWER         139.063
+0                                                    MISCELLANEOUS
+0                              INDICATED MEAN EFFECTIVE PRESSURE (ATM)            14.5108
+                               PUMP MEAN EFFECTIVE PRESSURE (ATM)                 -2.9091
+                               MEAN TORQUE (NEWTON-METERS)                        90.3787
+0COMPOSITE EXHAUST GAS MOLE FRACTIONS AT 1120.88 K  AND  1.0000 ATM      MOLECULAR WEIGHT =  27.595
+      AR       0.007726      CO       0.002279      CO2      0.113202      H        0.000010      H2       0.001511
+      H2O      0.228891      NO       0.003643      N2       0.642392      N2O      0.000001      OH       0.000055
+      O2       0.000059      CH3OH    0.000037      AIR      0.000193
+0FRESH CHARGE MOLE FRACTIONS AT  448.48 K  AND  4.7500 ATM      MOLECULAR WEIGHT =  29.342
+      CH3OH    0.122538      AIR      0.877462
+0NOTE:  INTAKE AND EXHAUST VALUES CALCULATED WHEN THE VALVES CLOSE.
+0COMPUTER CYCLE TIME=   0.000 SEC
+1EXHAUST GAS PROPERTIES AVERAGED FOR   3 CYCLES
+0     NET EXHAUST FLOW RATE (G/SEC) = 169.1979
+0     MOLECULAR WEIGHT =  27.5950
+0     ENTHALPY (J/G) =  -2700.44
+0     MASS AVERAGED COMPOSITION (MOLE FRACTIONS)
+          AR           0.007727
+          CO           0.002445
+          CO2          0.113050
+          H            0.000007
+          H2           0.001357
+          H2O          0.229065
+          NO           0.003675
+          N2           0.642460
+          N2O          0.000002
+          OH           0.000073
+          O2           0.000045
+          CH3OH        0.000015
+          AIR          0.000077
+1
+
+
+0TOTAL COMPUTER TIME=   0.000 SEC        DELTA TIME =  0.000 SEC
+
+0EXHAUST VALVE CLOSES
+0SINGULAR MATRIX, ITERATION  2  VARIABLE  5
+0SINGULAR MATRIX, ITERATION  4  VARIABLE  5
+0WARNING--POINT 15  USES A REDUCED SET OF COMPONENTS AND NO SPECIES USING THE ELIMINATED COMPONENT ARE CALCULATED.
+ ADD H2O(L)      
+0THE TEMPERATURE=  0.2981E+03 IS OUT OF RANGE FOR POINT   15
+
+
+0TOTAL COMPUTER TIME=   0.000 SEC        DELTA TIME =  0.000 SEC
+
+0INTAKE VALVE CLOSES
+0SINGULAR MATRIX, ITERATION  2  VARIABLE  5
+0SINGULAR MATRIX, ITERATION  4  VARIABLE  5
+0WARNING--POINT  3  USES A REDUCED SET OF COMPONENTS AND NO SPECIES USING THE ELIMINATED COMPONENT ARE CALCULATED.
+ ADD H2O(L)      
+0THE TEMPERATURE=  0.2981E+03 IS OUT OF RANGE FOR POINT    3
+
+
+0TOTAL COMPUTER TIME=   0.000 SEC        DELTA TIME =  0.000 SEC
+
+
+
+0TOTAL COMPUTER TIME=   0.000 SEC        DELTA TIME =  0.000 SEC
+
+
+
+0TOTAL COMPUTER TIME=   0.000 SEC        DELTA TIME =  0.000 SEC
+
+0EXHAUST VALVE OPENS
+
+
+0TOTAL COMPUTER TIME=   0.000 SEC        DELTA TIME =  0.000 SEC
+
+0INTAKE VALVE OPENS  -  A/F =  6.4731
+
+
+0TOTAL COMPUTER TIME=   0.000 SEC        DELTA TIME =  0.000 SEC
+
+1INTERNAL COMBUSTION ENGINE MODEL ZMOTTO                                    CYCLE  10    LEVEL 5    CASE NO.     1359
+     REF:  ZELEZNIK, FRANK J.; AND MCBRIDE, BONNIE J.:  MODELING THE INTERNAL COMBUSTION ENGINE. NASA RP-1094, 1985.
+0COMPRESSION RATIO =  11.5     RPM = 9500.0     EGR = 0.000     T(EGR) =  298.1 K     SPARK ADVANCE =  40.00 DEG
+ FUEL PRESSURE = 1.00000 ATM     MANIFOLD PRESSURE = 4.75000 ATM     EXHAUST PRESSURE = 1.00000 ATM
+ FLOWS ARE ISENTROPIC
+ BORE = 10.922 CM     STROKE = 10.312 CM     ROD = 17.145 CM     CHAMBER AREA =129.030 SQ CM     WALL TEMP =  360.0 K
+ TOTAL VOLUME = 1058.15 CC     DISPLACEMENT VOLUME =  966.13 CC
+0IVOPEN = 699.00 DEG     IVSHUT = 265.00 DEG                         EVOPEN = 465.00 DEG     EVSHUT =  45.00 DEG
+
+ EICHELBERG HEAT TRANSFER COEFICIENT
+0    KINETIC FLAME    FINITE BURNING INTERVAL = 99.4 DEG    COSINE  COMBUSTION    TAU =0.0000E+00 SEC    BETA =   0.000
+          AN =   0.500000  -0.500000
+0                                                                            WT FRACTION   ENERGY   STATE   TEMP
+          CHEMICAL FORMULA                                                                 CAL/MOL          DEG K
+ FUEL    C  1.00000   H  4.00000   O  1.00000                                   1.000000   -48064.793  G    298.15
+ AIR     N  1.56168   O  0.41959   AR 0.00936   C  0.00032                      1.000000      -29.791  G    298.15
+0                  A/F=  6.4731   PERCENT FUEL=  13.3813   EQUIVALENCE RATIO= 1.0000   PHI=   1.0000
+0                                      PERFORMANCE PARAMETERS FOR ONE CYLINDER
+0      MASS PER CYCLE (G)                 MEAN INTAKE MASS FLOW RATE (G/SEC)       MEAN EXHAUST MASS FLOW RATE (G/SEC)
+0     TOTAL        1.37234                      CHARGE       98.9256                      EXHAUST      99.0014
+      FUEL         0.16712                      FUEL         13.2376                      CO           0.22759
+      AIR          1.08179                      AIR          85.6880                      NOX          0.39023
+                                                NET          98.9256                      NET          99.0014
+0   ENERGY PER CYCLE (JOULES)              AVERAGE ENERGY RATE - POWER (KW)                CYCLE EFFICIENCIES
+
+  INDICATED WORK       1425.399             INDICATED POWER       112.844                NET WORK      0.286237
+  INDICATED PUMP WORK  -285.463             INDICATED PUMP POWER  -22.599                HEAT LOSS     0.076387
+  HEAT LOSS             304.211             HEAT LOSS RATE         24.083                EXHAUST       0.440195
+  CHEM. ENERGY         3982.486             EXHAUST POWER         138.785
+0                                                    MISCELLANEOUS
+0                              INDICATED MEAN EFFECTIVE PRESSURE (ATM)            14.5607
+                               PUMP MEAN EFFECTIVE PRESSURE (ATM)                 -2.9161
+                               MEAN TORQUE (NEWTON-METERS)                        90.7132
+0COMPOSITE EXHAUST GAS MOLE FRACTIONS AT 1118.90 K  AND  1.0000 ATM      MOLECULAR WEIGHT =  27.595
+      AR       0.007728      CH3OH    0.000038      CO       0.002265      CO2      0.113217      H        0.000010
+      H2       0.001506      H2O      0.228897      NO       0.003625      N2       0.642558      N2O      0.000001
+      OH       0.000055      O2       0.000100
+0FRESH CHARGE MOLE FRACTIONS AT  448.48 K  AND  4.7500 ATM      MOLECULAR WEIGHT =  29.342
+      CH3OH    0.122538      AIR      0.877462
+0NOTE:  INTAKE AND EXHAUST VALUES CALCULATED WHEN THE VALVES CLOSE.
+0COMPUTER CYCLE TIME=   0.000 SEC
+1EXHAUST GAS PROPERTIES AVERAGED FOR   4 CYCLES
+0     NET EXHAUST FLOW RATE (G/SEC) = 151.6488
+0     MOLECULAR WEIGHT =  27.5950
+0     ENTHALPY (J/G) =  -2682.97
+0     MASS AVERAGED COMPOSITION (MOLE FRACTIONS)
+          AR           0.007728
+          CH3OH        0.000006
+          CO           0.002415
+          CO2          0.113077
+          H            0.000008
+          H2           0.001381
+          H2O          0.229038
+          NO           0.003667
+          N2           0.642476
+          N2O          0.000002
+          OH           0.000070
+          O2           0.000054
+          CH3OH        0.000013
+          AIR          0.000064
+1
+
+
+0TOTAL COMPUTER TIME=   0.000 SEC        DELTA TIME =  0.000 SEC
+
+0EXHAUST VALVE CLOSES
+0SINGULAR MATRIX, ITERATION  2  VARIABLE  5
+0SINGULAR MATRIX, ITERATION  4  VARIABLE  5
+0WARNING--POINT 15  USES A REDUCED SET OF COMPONENTS AND NO SPECIES USING THE ELIMINATED COMPONENT ARE CALCULATED.
+ ADD H2O(L)      
+0THE TEMPERATURE=  0.2981E+03 IS OUT OF RANGE FOR POINT   15
+
+
+0TOTAL COMPUTER TIME=   0.000 SEC        DELTA TIME =  0.000 SEC
+
+0INTAKE VALVE CLOSES
+0SINGULAR MATRIX, ITERATION  2  VARIABLE  5
+0SINGULAR MATRIX, ITERATION  4  VARIABLE  5
+0WARNING--POINT 12  USES A REDUCED SET OF COMPONENTS AND NO SPECIES USING THE ELIMINATED COMPONENT ARE CALCULATED.
+ ADD H2O(L)      
+0THE TEMPERATURE=  0.2981E+03 IS OUT OF RANGE FOR POINT   12
+
+
+0TOTAL COMPUTER TIME=   0.000 SEC        DELTA TIME =  0.000 SEC
+
+
+
+0TOTAL COMPUTER TIME=   0.000 SEC        DELTA TIME =  0.000 SEC
+
+
+
+0TOTAL COMPUTER TIME=   0.000 SEC        DELTA TIME =  0.000 SEC
+
+0EXHAUST VALVE OPENS
+
+
+0TOTAL COMPUTER TIME=   0.000 SEC        DELTA TIME =  0.000 SEC
+
+0INTAKE VALVE OPENS  -  A/F =  6.4731
+
+
+0TOTAL COMPUTER TIME=   0.000 SEC        DELTA TIME =  0.000 SEC
+
+1INTERNAL COMBUSTION ENGINE MODEL ZMOTTO                                    CYCLE  11    LEVEL 5    CASE NO.     1359
+     REF:  ZELEZNIK, FRANK J.; AND MCBRIDE, BONNIE J.:  MODELING THE INTERNAL COMBUSTION ENGINE. NASA RP-1094, 1985.
+0COMPRESSION RATIO =  11.5     RPM = 9500.0     EGR = 0.000     T(EGR) =  298.1 K     SPARK ADVANCE =  40.00 DEG
+ FUEL PRESSURE = 1.00000 ATM     MANIFOLD PRESSURE = 4.75000 ATM     EXHAUST PRESSURE = 1.00000 ATM
+ FLOWS ARE ISENTROPIC
+ BORE = 10.922 CM     STROKE = 10.312 CM     ROD = 17.145 CM     CHAMBER AREA =129.030 SQ CM     WALL TEMP =  360.0 K
+ TOTAL VOLUME = 1058.15 CC     DISPLACEMENT VOLUME =  966.13 CC
+0IVOPEN = 699.00 DEG     IVSHUT = 265.00 DEG                         EVOPEN = 465.00 DEG     EVSHUT =  45.00 DEG
+
+ EICHELBERG HEAT TRANSFER COEFICIENT
+0    KINETIC FLAME    FINITE BURNING INTERVAL = 99.4 DEG    COSINE  COMBUSTION    TAU =0.0000E+00 SEC    BETA =   0.000
+          AN =   0.500000  -0.500000
+0                                                                            WT FRACTION   ENERGY   STATE   TEMP
+          CHEMICAL FORMULA                                                                 CAL/MOL          DEG K
+ FUEL    C  1.00000   H  4.00000   O  1.00000                                   1.000000   -48064.793  G    298.15
+ AIR     N  1.56168   O  0.41959   AR 0.00936   C  0.00032                      1.000000      -29.791  G    298.15
+0                  A/F=  6.4731   PERCENT FUEL=  13.3813   EQUIVALENCE RATIO= 1.0000   PHI=   1.0000
+0                                      PERFORMANCE PARAMETERS FOR ONE CYLINDER
+0      MASS PER CYCLE (G)                 MEAN INTAKE MASS FLOW RATE (G/SEC)       MEAN EXHAUST MASS FLOW RATE (G/SEC)
+0     TOTAL        1.37204                      CHARGE       98.8963                      EXHAUST      98.9668
+      FUEL         0.16714                      FUEL         13.2336                      CO           0.16605
+      AIR          1.08189                      AIR          85.6627                      NOX          0.26062
+                                                NET          98.8963                      NET          98.9668
+0   ENERGY PER CYCLE (JOULES)              AVERAGE ENERGY RATE - POWER (KW)                CYCLE EFFICIENCIES
+
+  INDICATED WORK       1423.911             INDICATED POWER       112.726                NET WORK      0.285590
+  INDICATED PUMP WORK  -287.005             INDICATED PUMP POWER  -22.721                HEAT LOSS     0.076456
+  HEAT LOSS             304.366             HEAT LOSS RATE         24.096                EXHAUST       0.438900
+  CHEM. ENERGY         3980.908             EXHAUST POWER         138.322
+0                                                    MISCELLANEOUS
+0                              INDICATED MEAN EFFECTIVE PRESSURE (ATM)            14.5455
+                               PUMP MEAN EFFECTIVE PRESSURE (ATM)                 -2.9318
+                               MEAN TORQUE (NEWTON-METERS)                        90.4721
+0COMPOSITE EXHAUST GAS MOLE FRACTIONS AT 1126.00 K  AND  1.0000 ATM      MOLECULAR WEIGHT =  27.610
+      AR       0.007732      CH3OH    0.000027      CO       0.001654      CO2      0.113889      H        0.000010
+      H2       0.001079      H2O      0.229432      NO       0.002422      NO2      0.000001      N2       0.643497
+      O        0.000001      OH       0.000083      O2       0.000174
+0FRESH CHARGE MOLE FRACTIONS AT  448.48 K  AND  4.7500 ATM      MOLECULAR WEIGHT =  29.342
+      CH3OH    0.122538      AIR      0.877462
+0NOTE:  INTAKE AND EXHAUST VALUES CALCULATED WHEN THE VALVES CLOSE.
+0COMPUTER CYCLE TIME=   0.000 SEC
+1EXHAUST GAS PROPERTIES AVERAGED FOR   5 CYCLES
+0     NET EXHAUST FLOW RATE (G/SEC) = 141.1124
+0     MOLECULAR WEIGHT =  27.5971
+0     ENTHALPY (J/G) =  -2670.98
+0     MASS AVERAGED COMPOSITION (MOLE FRACTIONS)
+          AR           0.007728
+          CH3OH        0.000009
+          CO           0.002309
+          CO2          0.113191
+          H            0.000008
+          H2           0.001339
+          H2O          0.229093
+          NO           0.003492
+          N2           0.642619
+          N2O          0.000002
+          OH           0.000072
+          O2           0.000071
+          CH3OH        0.000011
+          AIR          0.000055
+1
+
+
+0TOTAL COMPUTER TIME=   0.000 SEC        DELTA TIME =  0.000 SEC
+
+0EXHAUST VALVE CLOSES
+0SINGULAR MATRIX, ITERATION  2  VARIABLE  5
+0SINGULAR MATRIX, ITERATION  4  VARIABLE  5
+0WARNING--POINT 15  USES A REDUCED SET OF COMPONENTS AND NO SPECIES USING THE ELIMINATED COMPONENT ARE CALCULATED.
+ ADD H2O(L)      
+0THE TEMPERATURE=  0.2981E+03 IS OUT OF RANGE FOR POINT   15
+
+
+0TOTAL COMPUTER TIME=   0.000 SEC        DELTA TIME =  0.000 SEC
+
+0INTAKE VALVE CLOSES
+0SINGULAR MATRIX, ITERATION  2  VARIABLE  5
+0SINGULAR MATRIX, ITERATION  4  VARIABLE  5
+0WARNING--POINT  3  USES A REDUCED SET OF COMPONENTS AND NO SPECIES USING THE ELIMINATED COMPONENT ARE CALCULATED.
+ ADD H2O(L)      
+0THE TEMPERATURE=  0.2981E+03 IS OUT OF RANGE FOR POINT    3
+
+
+0TOTAL COMPUTER TIME=   0.000 SEC        DELTA TIME =  0.000 SEC
+
+
+
+0TOTAL COMPUTER TIME=   0.000 SEC        DELTA TIME =  0.000 SEC
+
+
+
+0TOTAL COMPUTER TIME=   0.000 SEC        DELTA TIME =  0.000 SEC
+
+0EXHAUST VALVE OPENS
+
+
+0TOTAL COMPUTER TIME=   0.000 SEC        DELTA TIME =  0.000 SEC
+
+0INTAKE VALVE OPENS  -  A/F =  6.4731
+
+
+0TOTAL COMPUTER TIME=   0.000 SEC        DELTA TIME =  0.000 SEC
+
+1INTERNAL COMBUSTION ENGINE MODEL ZMOTTO                                    CYCLE  12    LEVEL 5    CASE NO.     1359
+     REF:  ZELEZNIK, FRANK J.; AND MCBRIDE, BONNIE J.:  MODELING THE INTERNAL COMBUSTION ENGINE. NASA RP-1094, 1985.
+0COMPRESSION RATIO =  11.5     RPM = 9500.0     EGR = 0.000     T(EGR) =  298.1 K     SPARK ADVANCE =  40.00 DEG
+ FUEL PRESSURE = 1.00000 ATM     MANIFOLD PRESSURE = 4.75000 ATM     EXHAUST PRESSURE = 1.00000 ATM
+ FLOWS ARE ISENTROPIC
+ BORE = 10.922 CM     STROKE = 10.312 CM     ROD = 17.145 CM     CHAMBER AREA =129.030 SQ CM     WALL TEMP =  360.0 K
+ TOTAL VOLUME = 1058.15 CC     DISPLACEMENT VOLUME =  966.13 CC
+0IVOPEN = 699.00 DEG     IVSHUT = 265.00 DEG                         EVOPEN = 465.00 DEG     EVSHUT =  45.00 DEG
+
+ EICHELBERG HEAT TRANSFER COEFICIENT
+0    KINETIC FLAME    FINITE BURNING INTERVAL = 99.4 DEG    COSINE  COMBUSTION    TAU =0.0000E+00 SEC    BETA =   0.000
+          AN =   0.500000  -0.500000
+0                                                                            WT FRACTION   ENERGY   STATE   TEMP
+          CHEMICAL FORMULA                                                                 CAL/MOL          DEG K
+ FUEL    C  1.00000   H  4.00000   O  1.00000                                   1.000000   -48064.793  G    298.15
+ AIR     N  1.56168   O  0.41959   AR 0.00936   C  0.00032                      1.000000      -29.791  G    298.15
+0                  A/F=  6.4731   PERCENT FUEL=  13.3813   EQUIVALENCE RATIO= 1.0000   PHI=   1.0000
+0                                      PERFORMANCE PARAMETERS FOR ONE CYLINDER
+0      MASS PER CYCLE (G)                 MEAN INTAKE MASS FLOW RATE (G/SEC)       MEAN EXHAUST MASS FLOW RATE (G/SEC)
+0     TOTAL        1.37181                      CHARGE       98.6586                      EXHAUST      99.1556
+      FUEL         0.16677                      FUEL         13.2018                      CO           0.16429
+      AIR          1.07953                      AIR          85.4568                      NOX          0.25544
+                                                NET          98.6585                      NET          99.1556
+0   ENERGY PER CYCLE (JOULES)              AVERAGE ENERGY RATE - POWER (KW)                CYCLE EFFICIENCIES
+
+  INDICATED WORK       1420.808             INDICATED POWER       112.481                NET WORK      0.286254
+  INDICATED PUMP WORK  -283.481             INDICATED PUMP POWER  -22.442                HEAT LOSS     0.076520
+  HEAT LOSS             304.023             HEAT LOSS RATE         24.069                EXHAUST       0.440166
+  CHEM. ENERGY         3973.145             EXHAUST POWER         138.450
+0                                                    MISCELLANEOUS
+0                              INDICATED MEAN EFFECTIVE PRESSURE (ATM)            14.5138
+                               PUMP MEAN EFFECTIVE PRESSURE (ATM)                 -2.8958
+                               MEAN TORQUE (NEWTON-METERS)                        90.5056
+0COMPOSITE EXHAUST GAS MOLE FRACTIONS AT 1125.47 K  AND  1.0000 ATM      MOLECULAR WEIGHT =  27.610
+      AR       0.007732      CH3OH    0.000025      CO       0.001633      CO2      0.113917      H        0.000010
+      H2       0.001065      H2O      0.229456      NO       0.002370      NO2      0.000001      N2       0.643532
+      O        0.000001      OH       0.000084      O2       0.000175
+0FRESH CHARGE MOLE FRACTIONS AT  448.48 K  AND  4.7500 ATM      MOLECULAR WEIGHT =  29.342
+      CH3OH    0.122538      AIR      0.877462
+0NOTE:  INTAKE AND EXHAUST VALUES CALCULATED WHEN THE VALVES CLOSE.
+0COMPUTER CYCLE TIME=   0.000 SEC
+1EXHAUST GAS PROPERTIES AVERAGED FOR   6 CYCLES
+0     NET EXHAUST FLOW RATE (G/SEC) = 134.1196
+0     MOLECULAR WEIGHT =  27.5987
+0     ENTHALPY (J/G) =  -2662.10
+0     MASS AVERAGED COMPOSITION (MOLE FRACTIONS)
+          AR           0.007729
+          CH3OH        0.000011
+          CO           0.002225
+          CO2          0.113281
+          H            0.000008
+          H2           0.001305
+          H2O          0.229137
+          NO           0.003354
+          N2           0.642731
+          N2O          0.000002
+          OH           0.000074
+          O2           0.000084
+          CH3OH        0.000009
+          AIR          0.000049
+
+
+0TOTAL COMPUTER TIME=   0.000 SEC        DELTA TIME =  0.000 SEC
+
+1
+                                                                        
+0ERROR IN ABOVE CARD.  CONTENTS IGNORED. (MAIN)
